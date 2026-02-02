@@ -38,3 +38,25 @@ o usuario escreve o nome o modo de jogo e o numero das respostas que achar certo
 - `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
 - `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta, devolve se acertou
 - `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 5) Estrutura de ficheiros / módulos (decidida por vocês)
+
+> vamos possuir o `main.py` onde o jogo acontece
+
+>tambem terremos o `menu.py` onde rodara a função do menu
+
+> terremos o `logica.py` onde teremos a função onde ele faz a pergunta 
+
