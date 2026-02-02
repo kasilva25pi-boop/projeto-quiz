@@ -38,3 +38,12 @@ o usuario escreve o nome o modo de jogo e o numero das respostas que achar certo
 - `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
 - `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta, devolve se acertou
 - `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações
+
+#### 4) Fluxo do programa
+
+Um fluxograma simples (pode ser em texto ou diagrama) ou passos numerados que expliquem:
+
+- Ao iniciar o programa durante o quiz será feita perguntas para o jogador respondê-las, conforme o jogador for acertando as perguntas ele ganhará pontos 
+- como o menu liga ao jogo, como o jogo termina, etc.
+- A entradas invalidas serão tratadas com tratamento de erros
+- como se escolhe jogar outra vez ou sair
