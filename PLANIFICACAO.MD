@@ -1,11 +1,11 @@
-# PROJETO QUIZ
+# 🤓 PROJETO QUIZ 🤓
 
 ### Participantes: Rodrigo, kayque, luis(talvez)
 
 
 
 
-### 1. Como vão representar: as perguntas em memória (lista de dicionários?)
+### 1) Como vão representar: as perguntas em memória (lista de dicionários?)
 > um dicionario dentro de uma lista 
 
 #### 1.2. A pontuação (inteiro? dicionário com certas/erradas?)
@@ -23,17 +23,6 @@ Pontos = {
 
 ### 2) Entradas / Processamento / Saídas
 
-##### Uma tabela ou lista com:
-#### 2.1 entradas (o que o utilizador escreve / o que vem do JSON)
-
-> o usuario escreve o nome o modo de jogo e o numero das respostas que achar certo
-
-#### 2.2 processamento (o que o programa calcula/decide)
-> o programa grava o nome do jogador em um `ficheiro.json` com um dicionario com o nome do jogar e o registra os pontos a partir dele, ele tambem sera responsavel por verificar se a resposta do jogador corresponde com o que o jogador inserir na resposta
-
-#### 2.3 saídas (o que mostra no terminal / o que guarda em ficheiro)
-> no terminal sera mostrado o menu, as perguntas assim como as opções e tambem se o jogador acertou ou não
-
 
 | entradas | Processamento | Saída |
 |------------|-------------|-------|
@@ -42,3 +31,10 @@ o usuario escreve o nome o modo de jogo e o numero das respostas que achar certo
 
 
 
+### 3) Lista de funções (com responsabilidades)
+
+
+- `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal
+- `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
+- `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta, devolve se acertou
+- `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações
