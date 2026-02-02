@@ -56,3 +56,20 @@ Um fluxograma simples (pode ser em texto ou diagrama) ou passos numerados que ex
 >tambem terremos o `menu.py` onde rodara a função do menu
 
 > terremos o `logica.py` onde teremos a função onde ele faz a pergunta 
+
+
+#### 6) Plano de testes (manual)
+
+Criar uma lista de testes do tipo:
+
+> Se escrever ‘a’, ou um numero em vez de uma opção que não exista, o programa não crasha da um `ValueError` e volta a pedir a resposta da pergunta”
+
+>  Se escolher uma opção fora do intervalo, usamos um `Indexerror` e repete o programa
+
+
+> se o algum dos `ficheiros.json` não existir usaremos um `FileNotFoundError`
+
+> Usaremos o `Raise` para pegarmos erros especificos como por exemplo o jogador não escrever nada
+
+
+
