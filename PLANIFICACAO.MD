@@ -5,11 +5,52 @@
 
 
 
+
 ### 1) Como vão representar: as perguntas em memória (lista de dicionários?)
 > um dicionario dentro de uma lista 
+````python
+Pergutas = [
+
+    {
+        "id": (identificador da pergunta),
+        "Pergunta": (a pergunta que aparece para o usuario no terminal),
+        "opcoes": [numero de opções em formato de lista em que cada indice é uma das opções de resposta]
+        "Dificuldade" = (varia entre facil, medio e dificil dependendo da dificuldade se ganha mais pontos),
+        "correta": (indice da lista "opcoes")
+
+
+
+
+
+    }, 
+
+    {
+
+         "id": "Pergunta_1",
+        "Pergunta": "Qual a cor do ceú?",
+        "opcoes": ["Azul", "Verde", "Amarelo", "Rosa"]
+        "Dificuldade" = "Facil",
+        "correta": 0
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+]
+
+````
 
 #### 1.2. A pontuação (inteiro? dicionário com certas/erradas?)
-> vai ser um valor inteiro
+> vai ser um valor inteiro baseado na dificuldade da 
 #### 1.3. as pontuações guardadas (lista de dicionários em pontuacoes.json?)
 > dicionario com o nome e a pontuação que a pessoa fez
 ````python
@@ -26,7 +67,9 @@ Pontos = {
 
 | entradas | Processamento | Saída |
 |------------|-------------|-------|
-o usuario escreve o nome dele(a), o modo de jogo e as respostas que achar certo| o programa grava o nome do jogador em um `ficheiro.json` com um dicionario com o nome do jogar e o registra os pontos a partir dele, ele tambem sera responsavel por verificar se a resposta do jogador corresponde com o que o jogador inserir na resposta| no terminal sera mostrado o menu, as perguntas assim como as opções e tambem se o jogador acertou ou não|----------|-----------|---------|
+o usuario escreve o nome dele(a)| o programa grava o nome do jogador em um `ficheiro.json` com um dicionario com o nome do jogador e o registra os pontos a partir dele | no terminal sera mostrado o menu |
+o modo de jogo se quer continuar ou sair do jogo |sera responsavel por verificar se a resposta do jogador corresponde com a resposta correta e os inputs em geral  | as perguntas na qual o usuario tera de ler e responder     |
+Usuario escreve as respostas que achar certo | o Processamento carrega as funções chama variaveis    | mostra as opções e tambem se o jogador acertou ou não
 
 
 
@@ -36,8 +79,10 @@ o usuario escreve o nome dele(a), o modo de jogo e as respostas que achar certo|
 
 - `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal
 - `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
-- `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta, devolve se acertou
-- `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações
+- `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta
+- `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações, e o nome do ultilizador
+- `verifica_respo(lista)` — compara se a resposta do usuario com a resposta da pergunta
+- `dar_pontos(pontos_pergunta)` — pontos que são dados ao player se ele acertar a questão baseado na dificuldade da questão e depois guardados na função de guardar pontos
 
 #### 4) Fluxo do programa
 
