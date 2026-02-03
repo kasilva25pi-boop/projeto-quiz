@@ -26,7 +26,7 @@ Pontos = {
 
 | entradas | Processamento | Saída |
 |------------|-------------|-------|
-o usuario escreve o nome o modo de jogo e o numero das respostas que achar certo| o programa grava o nome do jogador em um `ficheiro.json` com um dicionario com o nome do jogar e o registra os pontos a partir dele, ele tambem sera responsavel por verificar se a resposta do jogador corresponde com o que o jogador inserir na resposta| no terminal sera mostrado o menu, as perguntas assim como as opções e tambem se o jogador acertou ou não|----------|-----------|---------|
+o usuario escreve o nome dele(a), o modo de jogo e as respostas que achar certo| o programa grava o nome do jogador em um `ficheiro.json` com um dicionario com o nome do jogar e o registra os pontos a partir dele, ele tambem sera responsavel por verificar se a resposta do jogador corresponde com o que o jogador inserir na resposta| no terminal sera mostrado o menu, as perguntas assim como as opções e tambem se o jogador acertou ou não|----------|-----------|---------|
 
 
 
@@ -69,7 +69,18 @@ Criar uma lista de testes do tipo:
 
 > se o algum dos `ficheiros.json` não existir usaremos um `FileNotFoundError`
 
-> Usaremos o `Raise` para pegarmos erros especificos como por exemplo o jogador não escrever nada
+> Usaremos o `Raise` para pegarmos erros especificos como por exemplo o jogador não escrever nada na resposta
+
+> usaremos o `Keyerror` se percorremos algum dicionario e alguma chave que tentarmos aceder não exista
+
+>  usaremos um `ImportError` caso o usuario exclua uma das funções de algum ficheiro que tentarmos exportar
+
+> se o ultilizador excluir um `ficheiros.json` usaremos um `FileNotFoundError`
+
+> Quando o ultilizador introduz o seu nome e usar caracteres invalidos ultilizaremos o `TypeError`
+
+> Se tentarmos aceder a uma variavel que o ultilizador excluiu acidentalmente ou que não exista por algum motivo, ultilizaremos um `NameError`
+
 
 
 
