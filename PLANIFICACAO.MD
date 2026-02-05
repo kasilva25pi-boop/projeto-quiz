@@ -9,13 +9,13 @@
 ### 1) Como vão representar: as perguntas em memória (lista de dicionários?)
 > um dicionario dentro de uma lista 
 ````python
-Pergutas = [
+Perguntas = [
 
     {
         "id": (identificador da pergunta),
         "Pergunta": (a pergunta que aparece para o usuario no terminal),
         "opcoes": [numero de opções em formato de lista em que cada indice é uma das opções de resposta]
-        "Dificuldade" = (varia entre facil, medio e dificil dependendo da dificuldade se ganha mais pontos),
+        "Dificuldade": (varia entre facil, medio e dificil dependendo da dificuldade se ganha mais pontos),
         "correta": (indice da lista "opcoes")
 
 
@@ -28,8 +28,8 @@ Pergutas = [
 
          "id": "Pergunta_1",
         "Pergunta": "Qual a cor do ceú?",
-        "opcoes": ["Azul", "Verde", "Amarelo", "Rosa"]
-        "Dificuldade" = "Facil",
+        "opcoes": ["Azul", "Verde", "Amarelo", "Rosa"],
+        "Dificuldade": "Facil",
         "correta": 0
 
 
@@ -50,7 +50,26 @@ Pergutas = [
 ````
 
 #### 1.2. A pontuação (inteiro? dicionário com certas/erradas?)
-> vai ser um valor inteiro baseado na dificuldade da 
+> vai ser um valor inteiro baseado na dificuldade da pergunta
+
+```python
+def dar_pontos(identificador):
+
+    for perguntas in Perguntas:
+    for chave, valor in perguntas.items():
+        if valor = identificador:
+            if valor == "Dificil":
+                return 3
+            elif valor == "Facil":
+                return 1
+             elif valor == "Medio":
+                return 2
+
+
+
+
+
+```
 #### 1.3. as pontuações guardadas (lista de dicionários em pontuacoes.json?)
 > dicionario com o nome e a pontuação que a pessoa fez
 ````python
@@ -77,12 +96,12 @@ Usuario escreve as respostas que achar certo | o Processamento carrega as funç�
 ### 3) Lista de funções (com responsabilidades)
 
 
-- `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal
+- `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal 
 - `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
 - `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta
-- `guardar_pontuacao(pontos)` — escreve no ficheiro de pontuações, e o nome do ultilizador
-- `verifica_respo(lista)` — compara se a resposta do usuario com a resposta da pergunta
-- `dar_pontos(pontos_pergunta)` — pontos que são dados ao player se ele acertar a questão baseado na dificuldade da questão e depois guardados na função de guardar pontos
+- `guardar_info(pontos)` — escreve no ficheiro de pontuações, e o nome do ultilizador
+- `verifica_respo(lista)` — compara se a resposta do usuario com a resposta da pergunta esta correta
+- `dar_pontos(id, pontos_pergunta)` — pontos que são dados ao player se ele acertar a questão baseado na dificuldade da questão e depois guardados na função de guardar pontos
 
 #### 4) Fluxo do programa
 
@@ -106,6 +125,8 @@ Um fluxograma simples (pode ser em texto ou diagrama) ou passos numerados que ex
 #### 6) Plano de testes (manual)
 
 Criar uma lista de testes do tipo:
+
+> Usar o `raise` error caso o player não bote o nome ou bote um numero por exemplo
 
 > Se escrever ‘a’, ou um numero em vez de uma opção que não exista, o programa não crasha da um `ValueError` e volta a pedir a resposta da pergunta”
 
