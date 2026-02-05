@@ -96,22 +96,23 @@ Usuario escreve as respostas que achar certo | o Processamento carrega as funç�
 ### 3) Lista de funções (com responsabilidades)
 
 
-- `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal 
-- `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida
-- `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta
-- `guardar_info(pontos)` — escreve no ficheiro de pontuações, e o nome do ultilizador
-- `verifica_respo(lista)` — compara se a resposta do usuario com a resposta da pergunta esta correta
-- `dar_pontos(id, pontos_pergunta)` — pontos que são dados ao player se ele acertar a questão baseado na dificuldade da questão e depois guardados na função de guardar pontos
+- `carregar_perguntas(ficheiro_com_perguntas)` — lê JSON carrega as perguntas no programa principal (Rodrigo)
+- `mostrar_menu(ficheiro_com_ menu)` — imprime opções e devolve escolha válida (Kayque)
+- `fazer_pergunta(ficheiro_carregado)` — roda lista com as perguntas, pede resposta (Rodrigo)
+- `guardar_info(pontos)` — escreve no ficheiro de pontuações, e o nome do ultilizador (Rodrigo)
+- `verifica_respo(lista)` — compara se a resposta do usuario com a resposta da pergunta esta correta (Rodrigo)
+- `dar_pontos(id, pontos_pergunta)` — pontos que são dados ao player se ele acertar a questão baseado na dificuldade da questão e depois guardados na função de guardar pontos (Rodrigo)
 
 #### 4) Fluxo do programa
 
 Um fluxograma simples (pode ser em texto ou diagrama) ou passos numerados que expliquem:
 
-- Ao iniciar o programa durante o quiz será feita perguntas para o jogador respondê-las, conforme o jogador for acertando as perguntas ele ganhará pontos 
-- como o menu liga ao jogo, como o jogo termina, etc.
-- A entradas invalidas serão tratadas com tratamento de erros
-- como se escolhe jogar outra vez ou sair
+- Ao iniciar o programa o menu sera apresentado, haverá tres opções: jogar, sair e ver pontos, ao sair o programa ira dizer adeus e terminará o programa, se quiser ver pontos o programa carregara o ficheiro JSON onde esta guardado os pontos irá mostrar no terminal e dira quem tem mais pontos, caso o ultilizador clique em jogar ele sera levado ao jogo.
 
+- no jogo ele pedirá o nome do usuario e iniciará  as perguntas, elas serão mostradas e o ultilizador tera de responder com um tempo limite, caso erre o programa fala que errou e passa pra proxima pergunta,  caso acerte dependendo da dificuldade ele dará o determinado ponto ao jogador e tambem passara pra proxima pergunta.
+- depois de responder todas as perguntas o programa falara quantas perguntas o usuario acertou e quantas errou e levara ao menu principal.
+- A entradas invalidas serão tratadas com tratamento de erros
+- de volta ao menu o usuario podera dizer se quer jogar denovo ou ver os pontos que fez no ultimo jogo ou sair
 
 #### 5) Estrutura de ficheiros / módulos (decidida por vocês)
 
