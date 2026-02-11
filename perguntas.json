@@ -1,0 +1,75 @@
+ [
+
+    {
+        "id": "Pergunta_1",
+        "Pergunta": "Qual é o maior planeta do Sistema Solar?",
+        "opcoes": ["Terra", "Júpiter", "Marte", "Saturno"],
+        "Dificuldade": "Facil",
+        "correta": 1
+    },
+
+    {
+        "id": "Pergunta_2",
+        "Pergunta": "Quem escreveu a peça 'Romeu e Julieta'?",
+        "opcoes": ["Charles Dickens", "William Shakespeare", "Fernando Pessoa", "Machado de Assis"],
+        "Dificuldade": "Facil",
+        "correta": 1
+    },
+
+    {
+        "id": "Pergunta_3",
+        "Pergunta": "Qual é o elemento químico representado pelo símbolo 'O'?",
+        "opcoes": ["Ouro", "Oxigênio", "Osmio", "Óxido"],
+        "Dificuldade": "Facil",
+        "correta": 1
+    },
+
+    {
+        "id": "Pergunta_4",
+        "Pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+        "opcoes": ["1965", "1969", "1972", "1959"],
+        "Dificuldade": "Medio",
+        "correta": 1
+    },
+
+    {
+        "id": "Pergunta_5",
+        "Pergunta": "Qual é a capital da Austrália?",
+        "opcoes": ["Sydney", "Melbourne", "Canberra", "Perth"],
+        "Dificuldade": "Medio",
+        "correta": 2
+    },
+
+    {
+        "id": "Pergunta_6",
+        "Pergunta": "Qual cientista desenvolveu a teoria da relatividade?",
+        "opcoes": ["Isaac Newton", "Galileu Galilei", "Albert Einstein", "Nikola Tesla"],
+        "Dificuldade": "Medio",
+        "correta": 2
+    },
+
+    {
+        "id": "Pergunta_7",
+        "Pergunta": "Qual é o país com maior população do mundo atualmente?",
+        "opcoes": ["China", "Estados Unidos", "Índia", "Indonésia"],
+        "Dificuldade": "Dificil",
+        "correta": 2
+    },
+
+    {
+        "id": "Pergunta_8",
+        "Pergunta": "Qual é a fórmula química da água oxigenada?",
+        "opcoes": ["H2O", "CO2", "H2O2", "O2"],
+        "Dificuldade": "Dificil",
+        "correta": 2
+    },
+
+    {
+        "id": "Pergunta_9",
+        "Pergunta": "Quem pintou o teto da Capela Sistina?",
+        "opcoes": ["Leonardo da Vinci", "Michelangelo", "Rafael", "Donatello"],
+        "Dificuldade": "Dificil",
+        "correta": 1
+    }
+
+]

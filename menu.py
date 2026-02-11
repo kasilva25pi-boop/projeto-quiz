@@ -1,17 +1,17 @@
 def mostrar_menu():
     
 
-    print("-----------🤓BEM VINDO AO QUIZ MANEIRÃO UHUHUHUHUHUHU🤓---------")
+    print("-----------🤓 BEM VINDO AO QUIZ MANEIRÃO UHUHUHUHUHUHU 🤓---------")
     print("-----------1. Jogar----------------------------------------------")
     print("-----------2. Pontuação------------------------------------------")
     print("-----------3. Sair-----------------------------------------------")
     
-    try:
-        escolha = int(input("Escreva a opção desejada: "))
+    
+    escolha = input("Escreva a opção desejada: ")
+
+    return escolha
       
-    except ValueError:
-          input("é pra ser um numero, tente de novo")
-          mostrar_menu()
+  
     
 
 
