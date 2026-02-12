@@ -30,3 +30,9 @@ def guardar_info(nome, pontos, ficheiro):
 
 
 guardar_info("teste", 25, "pontuacao.json")
+
+
+
+def mostrar_regras():
+
+    print("REGRAS: ")
