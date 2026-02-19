@@ -3,7 +3,8 @@ import json
 def carregar_perguntas(ficheiro_com_perguntas):
     try:
         with open(ficheiro_com_perguntas, "r", encoding="utf-8") as f:
-            return json.load(f)
+            lista_perguntas = json.load(f, ensure_ascii=False, indent=4)
+            return lista_perguntas
 
     except (FileNotFoundError, json.JSONDecodeError):
         print("Houve um erro no ficheiro")
@@ -23,13 +24,27 @@ def guardar_info(nome, pontos, ficheiro):
     lista_carregada[nome] = pontos
     try:
         with open(ficheiro, "w", encoding="utf-8") as f:
-            json.dump(lista_carregada, f)
+            json.dump(lista_carregada, f, ensure_ascii=False, indent=4)
 
     except (FileNotFoundError, json.JSONDecodeError):
         print("Houve um erro no ficheiro")
 
 
-guardar_info("teste", 25, "pontuacao.json")
+def mostrar_info(ficheiro_json):
+    maior = 0
+    nome_maior = "ninguem"
+    with open(ficheiro_json, "r", encoding="utf-8") as f:
+        pontuacao = json.load(f)
+
+
+    for nome, pontos in pontuacao.items():
+        print(f"{nome}: {pontos}")
+        print("--------------")
+        if pontos > maior:
+            maior = pontos 
+            nome_maior = nome
+        
+    print(f"A pessoa com maior pontos é {nome_maior} com: {pontos}")
 
 
 

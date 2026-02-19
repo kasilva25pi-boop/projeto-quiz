@@ -3,10 +3,10 @@ import json
 nome = input("digite seu nome: ")
 
 
-from logica import guardar_info, carregar_perguntas, mostrar_regras
+from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info
 from menu import mostrar_menu
 
-#TESTE debug
+#TESTE debug de guardar pontuação
 testanto_pontuação = int(input("Escreva um numero pra pontuação: "))
 guardar_info(nome, testanto_pontuação, "pontuacao.json")  
 
@@ -22,6 +22,7 @@ while True:
     
     elif escolhi == "3":
         print(f"Então vamos para as regras, {nome}")
+        mostrar_info("pontuacao.json")
     
     elif escolhi == "4":
         print(f"OK Adeus {nome}")
