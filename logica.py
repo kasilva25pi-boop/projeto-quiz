@@ -44,7 +44,7 @@ def mostrar_info(ficheiro_json):
             maior = pontos 
             nome_maior.append(nome)
         
-    print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {pontos}")
+    print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {pontos} pontos")
 
     input("Aperte Enter para voltar para o Menu: ")
 
