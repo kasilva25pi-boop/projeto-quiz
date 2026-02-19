@@ -18,11 +18,11 @@ while True:
         print(f"VAMOS JOGAR {nome}")
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
-        
+        mostrar_info("pontuacao.json")
     
     elif escolhi == "3":
         print(f"Então vamos para as regras, {nome}")
-        mostrar_info("pontuacao.json")
+        
     
     elif escolhi == "4":
         print(f"OK Adeus {nome}")

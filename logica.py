@@ -46,6 +46,8 @@ def mostrar_info(ficheiro_json):
         
     print(f"A pessoa com maior pontos é {nome_maior} com: {pontos}")
 
+    input("Aperte Enter para voltar para o Menu: ")
+
 
 
 def mostrar_regras():
