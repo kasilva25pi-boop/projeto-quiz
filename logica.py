@@ -53,3 +53,18 @@ def mostrar_info(ficheiro_json):
 def mostrar_regras():
 
     print("REGRAS: ")
+
+
+
+
+def dar_pontos(dificuldade):
+       
+            if dificuldade == "Dificil":
+                return 3
+            elif dificuldade == "Facil":
+                return 1
+            elif dificuldade == "Medio":
+                return 2
+            else:
+                print("houve um erro")
+                

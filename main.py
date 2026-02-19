@@ -3,7 +3,7 @@ import json
 nome = input("digite seu nome: ")
 
 
-from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info
+from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info, dar_pontos
 from menu import mostrar_menu
 
 #TESTE debug de guardar pontuação
@@ -18,6 +18,15 @@ while True:
         print(f"VAMOS JOGAR {nome}")
 
         perguntas_carregadas = carregar_perguntas("perguntas.json")
+
+        for dic in perguntas_carregadas:
+            
+            print(dic['id'])
+            print(dic['Pergunta'])
+            for i in dic['opcoes']:
+                print(i)
+            
+                
 
         
 
