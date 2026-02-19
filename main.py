@@ -16,6 +16,11 @@ while True:
     if escolhi == "1":
         
         print(f"VAMOS JOGAR {nome}")
+
+        perguntas_carregadas = carregar_perguntas("perguntas.json")
+
+        
+
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
         mostrar_info("pontuacao.json")

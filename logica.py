@@ -3,7 +3,7 @@ import json
 def carregar_perguntas(ficheiro_com_perguntas):
     try:
         with open(ficheiro_com_perguntas, "r", encoding="utf-8") as f:
-            lista_perguntas = json.load(f, ensure_ascii=False, indent=4)
+            lista_perguntas = json.load(f)
             return lista_perguntas
 
     except (FileNotFoundError, json.JSONDecodeError):
