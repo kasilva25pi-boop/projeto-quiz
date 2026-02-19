@@ -32,7 +32,7 @@ def guardar_info(nome, pontos, ficheiro):
 
 def mostrar_info(ficheiro_json):
     maior = 0
-    nome_maior = "ninguem"
+    nome_maior = []
     with open(ficheiro_json, "r", encoding="utf-8") as f:
         pontuacao = json.load(f)
 
@@ -40,11 +40,11 @@ def mostrar_info(ficheiro_json):
     for nome, pontos in pontuacao.items():
         print(f"{nome}: {pontos}")
         print("--------------")
-        if pontos > maior:
+        if pontos >= maior:
             maior = pontos 
-            nome_maior = nome
+            nome_maior.append(nome)
         
-    print(f"A pessoa com maior pontos é {nome_maior} com: {pontos}")
+    print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {pontos}")
 
     input("Aperte Enter para voltar para o Menu: ")
 
