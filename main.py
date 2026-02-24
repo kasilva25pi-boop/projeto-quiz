@@ -1,7 +1,7 @@
 
 import json
-#nome = input("digite seu nome: ")
-nome = ""
+nome = input("digite seu nome: ")
+
 pontos = 0 
 
 from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info, dar_pontos, responder
