@@ -68,3 +68,12 @@ def dar_pontos(dificuldade):
             else:
                 print("houve um erro")
                 
+
+def responder(dicionario):
+    
+    opcao = input("Digite sua resposta entre 0 e 3: ")
+
+    if opcao == dicionario['correta']:
+        dar_pontos(dicionario['Dificuldade'])
+    else:
+        input("voce errou, aperte enter pra continuar.....")

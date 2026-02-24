@@ -3,25 +3,25 @@
     {
         "id": "Pergunta_1",
         "Pergunta": "Qual é o maior planeta do Sistema Solar?",
-        "opcoes": ["Terra", "Júpiter", "Marte", "Saturno"],
+        "opcoes": ["Terra", "Marte", "Júpiter", "Saturno"],
         "Dificuldade": "Facil",
-        "correta": 1
+        "correta": 2
     },
 
     {
         "id": "Pergunta_2",
         "Pergunta": "Quem escreveu a peça 'Romeu e Julieta'?",
-        "opcoes": ["Charles Dickens", "William Shakespeare", "Fernando Pessoa", "Machado de Assis"],
+        "opcoes": ["Charles Dickens","Fernando Pessoa", "Machado de Assis","William Shakespeare"],
         "Dificuldade": "Facil",
-        "correta": 1
+        "correta": 3
     },
 
     {
         "id": "Pergunta_3",
         "Pergunta": "Qual é o elemento químico representado pelo símbolo 'O'?",
-        "opcoes": ["Ouro", "Oxigênio", "Osmio", "Óxido"],
+        "opcoes": ["Oxigênio", "Ouro", "Osmio", "Óxido"],
         "Dificuldade": "Facil",
-        "correta": 1
+        "correta": 0
     },
 
     {
@@ -59,17 +59,17 @@
     {
         "id": "Pergunta_8",
         "Pergunta": "Qual é a fórmula química da água oxigenada?",
-        "opcoes": ["H2O", "CO2", "H2O2", "O2"],
+        "opcoes": ["H2O", "CO2", "O2", "H2O2"],
         "Dificuldade": "Dificil",
-        "correta": 2
+        "correta": 3
     },
 
     {
         "id": "Pergunta_9",
         "Pergunta": "Quem pintou o teto da Capela Sistina?",
-        "opcoes": ["Leonardo da Vinci", "Michelangelo", "Rafael", "Donatello"],
+        "opcoes": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Donatello"],
         "Dificuldade": "Dificil",
-        "correta": 1
+        "correta": 0
     }
 
 ]

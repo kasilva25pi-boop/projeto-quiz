@@ -1,14 +1,15 @@
 
 import json
-nome = input("digite seu nome: ")
+#nome = input("digite seu nome: ")
+nome = ""
+pontos = 0 
 
-
-from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info, dar_pontos
+from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info, dar_pontos, responder
 from menu import mostrar_menu
 
 #TESTE debug de guardar pontuação
-testanto_pontuação = int(input("Escreva um numero pra pontuação: "))
-guardar_info(nome, testanto_pontuação, "pontuacao.json")  
+#testanto_pontuação = int(input("Escreva um numero pra pontuação: "))
+guardar_info(nome, pontos, "pontuacao.json")  
 
 while True:
     escolhi = mostrar_menu()
@@ -26,6 +27,7 @@ while True:
             for i in dic['opcoes']:
                 print(i)
             
+            responder(dic)
                 
 
         
