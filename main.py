@@ -16,7 +16,8 @@ while True:
 
     if escolhi == "1":
         
-        print(f"VAMOS JOGAR {nome}")
+        input(f"VAMOS JOGAR {nome}!!!!!")
+        print("\n")
 
         perguntas_carregadas = carregar_perguntas("perguntas.json")
 
@@ -24,10 +25,20 @@ while True:
             
             print(dic['id'])
             print(dic['Pergunta'])
+            print(f"Dificuldade: {dic['Dificuldade']}")
             for i in dic['opcoes']:
                 print(i)
+            try:
+                pontos_ganhos = responder(dic)
+                pontos = pontos + pontos_ganhos
+                guardar_info(nome, pontos, "pontuacao.json")
+
+            except ValueError:
+                input("Voce digitou algo alem de um numero")
+                continue
+
             
-            responder(dic)
+            
                 
 
         

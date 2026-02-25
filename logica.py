@@ -35,18 +35,21 @@ def mostrar_info(ficheiro_json):
     nome_maior = []
     with open(ficheiro_json, "r", encoding="utf-8") as f:
         pontuacao = json.load(f)
-
-
     for nome, pontos in pontuacao.items():
         print(f"{nome}: {pontos}")
         print("--------------")
         if pontos >= maior:
             maior = pontos 
+            
+    for nome, pontos in pontuacao.items():
+
+        if pontuacao[nome] == maior:
             nome_maior.append(nome)
         
     print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {maior} pontos")
 
     input("Aperte Enter para voltar para o Menu: ")
+
 
 
 
@@ -67,7 +70,8 @@ def dar_pontos(dificuldade):
                 return 2
             else:
                 print("houve um erro")
-                
+
+     
 
 def responder(dicionario):
     
@@ -76,7 +80,12 @@ def responder(dicionario):
     if opcao == dicionario['correta']:
         ganho = dar_pontos(dicionario['Dificuldade'])
         input(f"Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s)")
-        pontos += ganho
-        guardar_info(nome, pontos, "pontuacao.json")  
+        
+        return ganho
+        
     else:
         input("voce errou, aperte enter pra continuar.....")
+        ganho = 0
+        return ganho
+
+
