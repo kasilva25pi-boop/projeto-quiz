@@ -75,9 +75,9 @@ def dar_pontos(dificuldade):
 
 def responder(dicionario):
     
-    opcao = int(input("Digite sua resposta entre 0 e 3: "))
+    opcao = input("Digite sua resposta entre a e d: ")
 
-    if opcao == dicionario['correta']:
+    if opcao in dicionario['correta']:
         ganho = dar_pontos(dicionario['Dificuldade'])
         input(f"Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s)")
         
