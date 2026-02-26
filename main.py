@@ -48,15 +48,10 @@ while True:
                 guardar_info(nome, pontos, "pontuacao.json")
 
             except ValueError:
-                input("Voce digitou algo alem de um numero então não ganhou nenhum ponto")
+                input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
                 print("\n")
                 continue
 
-            
-            
-                
-
-        
 
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
@@ -65,6 +60,8 @@ while True:
     
     elif escolhi == "3":
         print(f"Então vamos para as regras, {nome}")
+        print("\n")
+
         
     
     elif escolhi == "4":
@@ -72,5 +69,6 @@ while True:
         break
     else:
         input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
+        print("\n")
         
         

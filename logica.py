@@ -83,13 +83,13 @@ def responder(dicionario):
 
     if opcao in dicionario['correta']:
         ganho = dar_pontos(dicionario['Dificuldade'])
-        input(f"Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s)")
+        input(f"✅✅✅✅ Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s) ✅✅✅✅")
         print("\n")
         
         return ganho
         
     else:
-        input("voce errou, aperte enter pra continuar.....")
+        input("❌❌❌❌voce errou, aperte enter pra continuar.....❌❌❌❌")
         print("\n")
         ganho = 0
         return ganho
