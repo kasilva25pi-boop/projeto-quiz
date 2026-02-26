@@ -9,6 +9,7 @@ def mostrar_menu():
     
     
     escolha = input("Escreva a opção desejada: ")
+    print("\n")
 
     return escolha
       

@@ -52,6 +52,7 @@ while True:
                 print("\n")
                 continue
 
+        input("🎉🎉 FIM DO QUIZ 🎉🎉")
 
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
