@@ -49,6 +49,7 @@ def mostrar_info(ficheiro_json):
     print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {maior} pontos")
 
     input("Aperte Enter para voltar para o Menu: ")
+    print("\n")
 
 
 
@@ -56,35 +57,40 @@ def mostrar_info(ficheiro_json):
 def mostrar_regras():
 
     print("REGRAS: ")
+    print("\n")
 
 
 
 
 def dar_pontos(dificuldade):
        
-            if dificuldade == "Dificil":
-                return 3
-            elif dificuldade == "Facil":
-                return 1
-            elif dificuldade == "Medio":
-                return 2
-            else:
-                print("houve um erro")
-
+            
+    if dificuldade == "Dificil":
+        return 3
+    elif dificuldade == "Facil":
+        return 1
+    elif dificuldade == "Medio":
+        return 2
+    else:
+        print("não foi encontrada uma dificuldade da pergunta")
+        return 0
+            
      
 
 def responder(dicionario):
     
-    opcao = input("Digite sua resposta entre a e d: ")
+    opcao = input("Digite sua resposta entre A, B, C,  D: ")
 
     if opcao in dicionario['correta']:
         ganho = dar_pontos(dicionario['Dificuldade'])
         input(f"Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s)")
+        print("\n")
         
         return ganho
         
     else:
         input("voce errou, aperte enter pra continuar.....")
+        print("\n")
         ganho = 0
         return ganho
 
