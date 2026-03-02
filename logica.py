@@ -45,8 +45,13 @@ def mostrar_info(ficheiro_json):
 
         if pontuacao[nome] == maior:
             nome_maior.append(nome)
+    
+    if maior == 0:
+        print("A maior pontuação é zero, ou ninguem jogou ainda ou todo mundo é burro")
+    
+    else:
         
-    print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {maior} pontos")
+        print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {maior} pontos")
 
     input("Aperte Enter para voltar para o Menu: ")
     print("\n")

@@ -16,7 +16,7 @@ perguntas_carregadas = carregar_perguntas("perguntas.json")
 
 while True:
     escolhi = mostrar_menu()
-    
+    #gerando a lista aleatoria 
     lista_aleatoria = []
     x = 0
     while x < 15:
@@ -26,6 +26,7 @@ while True:
         else:
             lista_aleatoria.append(pergunta_random)
             x += 1
+    #Ultilizador escolheu jogar        
     if escolhi == "1":
         pontos = 0
         guardar_info(nome, pontos, "pontuacao.json") 

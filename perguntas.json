@@ -2,9 +2,9 @@
     {
         "id": "Pergunta_1",
         "Pergunta": "Qual é a capital de França?",
-        "opcoes": ["A. Paris", "B. Roma", "C. Madrid", "D. Berlim"],
+        "opcoes": ["A. Roma", "B. Madrid", "C. Berlim", "D. Paris"],
         "Dificuldade": "Facil",
-        "correta": ["a", "A"]
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_2",
@@ -23,16 +23,16 @@
     {
         "id": "Pergunta_4",
         "Pergunta": "Que animal é conhecido como rei da selva?",
-        "opcoes": ["A. Leão", "B. Tigre", "C. Elefante", "D. Urso"],
+        "opcoes": ["A. Tigre", "B. Elefante", "C. Urso", "D. Leão"],
         "Dificuldade": "Facil",
-        "correta": ["a", "A"]
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_5",
         "Pergunta": "Qual é a cor do céu num dia limpo?",
-        "opcoes": ["A. Verde", "B. Azul", "C. Vermelho", "D. Amarelo"],
+        "opcoes": ["A. Verde", "B. Vermelho", "C. Amarelo",  "D. Azul"],
         "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_6",
@@ -44,16 +44,16 @@
     {
         "id": "Pergunta_7",
         "Pergunta": "Qual é o planeta onde vivemos?",
-        "opcoes": ["A. Marte", "B. Terra", "C. Saturno", "D. Mercúrio"],
+        "opcoes": ["A. Marte", "B. Saturno","C. Terra", "D. Mercúrio"],
         "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_8",
-        "Pergunta": "Qual é o resultado de 2 + 2?",
-        "opcoes": ["A. 3", "B. 4", "C. 5", "D. 6"],
-        "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "Pergunta": "Qual é o resultado de 8!?",
+        "opcoes": ["A. 40.320", "B. 34.430", "C. 40.866", "D. 29.989"],
+        "Dificuldade": "Dificil",
+        "correta": ["A", "a"]
     },
     {
         "id": "Pergunta_9",
@@ -65,16 +65,16 @@
     {
         "id": "Pergunta_10",
         "Pergunta": "Quem pintou a Mona Lisa?",
-        "opcoes": ["A. Van Gogh", "B. Leonardo da Vinci", "C. Picasso", "D. Monet"],
+        "opcoes": ["A. Van Gogh", "B. Picasso", "C. Monet", "D. Leonardo da Vinci"],
         "Dificuldade": "Facil",
         "correta": ["b", "B"]
     },
     {
         "id": "Pergunta_11",
-        "Pergunta": "Qual é o animal que ladra?",
-        "opcoes": ["A. Gato", "B. Cão", "C. Cavalo", "D. Vaca"],
-        "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "Pergunta": "Qual desses animais não voam?",
+        "opcoes": ["A. Flamingo", "B. Calopsita", "C. Pelicano", "D. Casuar"],
+        "Dificuldade": "Medio",
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_12",
@@ -85,10 +85,10 @@
     },
     {
         "id": "Pergunta_13",
-        "Pergunta": "Qual é o símbolo químico da água?",
-        "opcoes": ["A. O2", "B. H2O", "C. CO2", "D. HO"],
+        "Pergunta": "Qual é o símbolo químico da Potassio?",
+        "opcoes": ["A. Pt", "B. Ss", "C. K", "D. Po"],
         "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "correta": ["c", "C"]
     },
     {
         "id": "Pergunta_14",
@@ -100,16 +100,16 @@
     {
         "id": "Pergunta_15",
         "Pergunta": "Qual é o maior animal terrestre?",
-        "opcoes": ["A. Elefante africano", "B. Girafa", "C. Rinoceronte", "D. Urso"],
-        "Dificuldade": "Facil",
-        "correta": ["a", "A"]
+        "opcoes": ["A. Girafa", "B. Rinoceronte", "C. Urso", "D. Elefante africano"],
+        "Dificuldade": "Medio",
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_16",
-        "Pergunta": "Qual é o planeta vermelho?",
-        "opcoes": ["A. Marte", "B. Vénus", "C. Júpiter", "D. Saturno"],
+        "Pergunta": "Qual é o planeta conhecido como planeta vermelho?",
+        "opcoes": ["A. Vénus", "B. Júpiter","C. Marte", "D. Saturno"],
         "Dificuldade": "Facil",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_17",
@@ -121,9 +121,9 @@
     {
         "id": "Pergunta_18",
         "Pergunta": "Quantos lados tem um triângulo?",
-        "opcoes": ["A. 2", "B. 3", "C. 4", "D. 5"],
+        "opcoes": ["A. 2", "B. 4", "C. 5",  "D. 3"],
         "Dificuldade": "Facil",
-        "correta": ["b", "B"]
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_19",
@@ -135,24 +135,24 @@
     {
         "id": "Pergunta_20",
         "Pergunta": "Qual bebida é feita a partir do café?",
-        "opcoes": ["A. Espresso", "B. Chá", "C. Leite", "D. Sumos"],
+        "opcoes": ["A. Chá", "B. Leite", "C. Sumos", "D. Espresso"],
         "Dificuldade": "Facil",
-        "correta": ["a", "A"]
+        "correta": ["d", "D"]
     },
 
     {
         "id": "Pergunta_21",
         "Pergunta": "Quem formulou a teoria da relatividade?",
-        "opcoes": ["A. Newton", "B. Einstein", "C. Tesla", "D. Galileu"],
+        "opcoes": ["A. Newton", "B. Tesla", "C. Einstein", "D. Galileu"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["c", "C"]
     },
     {
         "id": "Pergunta_22",
         "Pergunta": "Em que ano começou a Segunda Guerra Mundial?",
-        "opcoes": ["A. 1939", "B. 1914", "C. 1945", "D. 1929"],
+        "opcoes": ["A. 1914", "B. 1945","C. 1939", "D. 1929"],
         "Dificuldade": "Medio",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_23",
@@ -164,23 +164,23 @@
     {
         "id": "Pergunta_24",
         "Pergunta": "Quem escreveu 'Os Lusíadas'?",
-        "opcoes": ["A. Fernando Pessoa", "B. Camões", "C. Saramago", "D. Eça de Queirós"],
+        "opcoes": ["A. Fernando Pessoa", "B. Saramago", "C. Eça de Queirós", "D. Camões"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_25",
         "Pergunta": "Qual é o símbolo químico do ferro?",
-        "opcoes": ["A. Fe", "B. F", "C. Fr", "D. Ir"],
+        "opcoes": ["A. F", "B. Fr","C. Fe", "D. Ir"],
         "Dificuldade": "Medio",
-        "correta": ["a", "A"]
+        "correta": ["C", "C"]
     },
     {
         "id": "Pergunta_26",
         "Pergunta": "Qual país inventou a pizza moderna?",
-        "opcoes": ["A. Espanha", "B. Itália", "C. França", "D. Grécia"],
+        "opcoes": ["A. Espanha", "B. França", "C. Itália", "D. Grécia"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_27",
@@ -192,23 +192,23 @@
     {
         "id": "Pergunta_28",
         "Pergunta": "Qual é o osso mais longo do corpo humano?",
-        "opcoes": ["A. Tíbia", "B. Fémur", "C. Rádio", "D. Clavícula"],
+        "opcoes": ["A. Tíbia", "B. Rádio", "C. Clavícula", "D. Fémur"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["D", "d"]
     },
     {
         "id": "Pergunta_29",
         "Pergunta": "Qual é a moeda oficial da União Europeia?",
-        "opcoes": ["A. Euro", "B. Libra", "C. Dólar", "D. Franco"],
+        "opcoes": ["A. Libra", "B. Dólar","C. Euro", "D. Franco"],
         "Dificuldade": "Medio",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_30",
         "Pergunta": "Qual gás as plantas absorvem na fotossíntese?",
-        "opcoes": ["A. Oxigénio", "B. Dióxido de carbono", "C. Hidrogénio", "D. Nitrogénio"],
+        "opcoes": ["A. Oxigénio", "B. Hidrogénio", "C. Nitrogénio",  "D. Dióxido de carbono"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_31",
@@ -227,23 +227,23 @@
     {
         "id": "Pergunta_33",
         "Pergunta": "Qual é o metal líquido à temperatura ambiente?",
-        "opcoes": ["A. Mercúrio", "B. Ferro", "C. Prata", "D. Alumínio"],
+        "opcoes": ["A. Ferro", "B. Prata","C. Mercúrio", "D. Alumínio"],
         "Dificuldade": "Medio",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_34",
-        "Pergunta": "Qual é o maior órgão do corpo humano?",
-        "opcoes": ["A. Coração", "B. Pele", "C. Fígado", "D. Pulmão"],
+        "Pergunta": "Quem foi o principal responsavel pela arquitetura dos edificios monumentais de Brasilia(Brasil)",
+        "opcoes": ["A. Machado de Assis", "B. Mauricio de Nassau", "C. Getulio Vargas", "D. Oscar Niemeyer"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_35",
         "Pergunta": "Quem descobriu a penicilina?",
-        "opcoes": ["A. Fleming", "B. Einstein", "C. Bohr", "D. Tesla"],
+        "opcoes": ["B. Einstein", "B. Bohr","C. Fleming", "D. Tesla"],
         "Dificuldade": "Medio",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_36",
@@ -268,10 +268,10 @@
     },
     {
         "id": "Pergunta_39",
-        "Pergunta": "Quantos planetas existem no Sistema Solar atualmente?",
-        "opcoes": ["A. 7", "B. 8", "C. 9", "D. 10"],
+        "Pergunta": "Quantos planetas,  existem no Sistema Solar atualmente?",
+        "opcoes": ["A. 5", "B. 9", "C. 10", "D. 8"],
         "Dificuldade": "Medio",
-        "correta": ["b", "B"]
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_40",
@@ -291,9 +291,9 @@
     {
         "id": "Pergunta_42",
         "Pergunta": "Qual é a velocidade aproximada da luz?",
-        "opcoes": ["A. 300 mil km/s", "B. 150 mil km/s", "C. 30 mil km/s", "D. 3 mil km/s"],
+        "opcoes": ["A. 150 mil km/s", "B. 30 mil km/s","C. 300 mil km/s", "D. 3 mil km/s"],
         "Dificuldade": "Dificil",
-        "correta": ["a", "A"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_43",
@@ -305,9 +305,9 @@
     {
         "id": "Pergunta_44",
         "Pergunta": "Qual é o maior lago do mundo em área?",
-        "opcoes": ["A. Baikal", "B. Mar Cáspio", "C. Vitória", "D. Superior"],
+        "opcoes": ["A. Baikal", "B. Vitória", "C. Superior",  "D. Mar Cáspio"],
         "Dificuldade": "Dificil",
-        "correta": ["b", "B"]
+        "correta": ["d", "D"]
     },
     {
         "id": "Pergunta_45",
@@ -333,9 +333,9 @@
     {
         "id": "Pergunta_48",
         "Pergunta": "Qual é o maior vulcão ativo da Europa?",
-        "opcoes": ["A. Vesúvio", "B. Etna", "C. Teide", "D. Stromboli"],
+        "opcoes": ["A. Vesúvio", "B. Teide", "C. Etna", "D. Stromboli"],
         "Dificuldade": "Dificil",
-        "correta": ["b", "B"]
+        "correta": ["C", "c"]
     },
     {
         "id": "Pergunta_49",
