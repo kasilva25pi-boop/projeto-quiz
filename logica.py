@@ -100,3 +100,7 @@ def responder(dicionario):
         return ganho
 
 
+
+
+def mostrar_jogos():
+    print("AAAAAAAAAAAAAAAA")

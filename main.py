@@ -28,6 +28,8 @@ while True:
             x += 1
     #Ultilizador escolheu jogar        
     if escolhi == "1":
+        
+        
         pontos = 0
         guardar_info(nome, pontos, "pontuacao.json") 
         input(f"VAMOS JOGAR {nome}!!!!!")
@@ -54,18 +56,18 @@ while True:
                 continue
 
         input("🎉🎉 FIM DO QUIZ 🎉🎉")
-
+    #Jogador escolher ir ver pontuação
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
         print("\n")
         mostrar_info("pontuacao.json")
-    
+    #Jogador quer ver as regras
     elif escolhi == "3":
         print(f"Então vamos para as regras, {nome}")
         print("\n")
 
         
-    
+    #Jogador quer encerrar o jogo
     elif escolhi == "4":
         print(f"OK Adeus {nome}")
         break
