@@ -13,7 +13,19 @@ def mostrar_menu():
 
     return escolha
       
+
+
+def mostrar_jogos():
+    print("\n")
+    print("-----------🎮Escolha o tipo de jogo que deseja jogar🎮---------")
+    print("-----------1. 🎮Jogar modo Classico----------------------------------------------")
+    print("-----------2. 🎎Jogar Verdadeira ou falso------------------------------------------")
+    print("-----------3. 💣Jogar Modo Bomba---------------------------------------------")
+    print("-----------4. 🚶‍♂️Voltar pro Menu-----------------------------------------------")
   
-    
+    escolha = input("Escreva a opção desejada: ")
+    print("\n")
+
+    return escolha
 
 

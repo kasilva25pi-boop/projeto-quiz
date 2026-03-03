@@ -84,7 +84,7 @@ def dar_pontos(dificuldade):
 
 def responder(dicionario):
     
-    opcao = input("Digite sua resposta entre A, B, C,  D: ")
+    opcao = input("Digite sua resposta entre A, B, C e D: ")
 
     if opcao in dicionario['correta']:
         ganho = dar_pontos(dicionario['Dificuldade'])
@@ -102,5 +102,29 @@ def responder(dicionario):
 
 
 
-def mostrar_jogos():
-    print("AAAAAAAAAAAAAAAA")
+def verdade_falso(dicionario):
+
+    opcao = input("Digite V para verdadeiro e F para falso: ")
+
+    if opcao in dicionario['correta']:
+        ganho = dar_pontos(dicionario['Dificuldade'])
+        input(f"✅✅✅✅ Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s) ✅✅✅✅")
+        print("\n")
+        
+        return ganho
+        
+    else:
+        
+        if dicionario['Dificuldade'] == "Facil":
+            input(f"❌❌❌❌voce errou, aperte enter pra continuar perdeu 1 ponto.....❌❌❌❌")
+            return -1
+
+        elif dicionario['Dificuldade'] == "Medio":
+            input(f"❌❌❌❌voce errou, aperte enter pra continuar perdeu 2 pontos.....❌❌❌❌")
+            return -2
+        elif dicionario['Dificuldade']:
+            input(f"❌❌❌❌voce errou, aperte enter pra continuar perdeu 3 pontos.....❌❌❌❌")
+            return -3
+            
+    print("\n")
+

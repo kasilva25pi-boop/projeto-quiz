@@ -1,0 +1,304 @@
+[
+
+    {
+    "id":"Pergunta_1",
+    "Pergunta":"A capital do Brasil foi transferida de Salvador para o Rio de Janeiro em 1763",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_2",
+    "Pergunta":"A independência do Brasil ocorreu em 1822, proclamada por Dom Pedro I",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_3",
+    "Pergunta":"A Revolução Francesa começou no ano de 1799",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_4",
+    "Pergunta":"O Mercúrio é o planeta mais próximo do Sol",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_5",
+    "Pergunta":"O átomo de oxigênio possui 8 prótons",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_6",
+    "Pergunta":"A velocidade da luz é maior que a velocidade do som",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_7",
+    "Pergunta":"O Brasil faz fronteira com todos os países da América do Sul",
+    "Dificuldade":"Medio",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_8",
+    "Pergunta":"O Monte Everest possui mais de 8.800 metros de altura",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_9",
+    "Pergunta":"A Antártida é o continente mais frio e mais seco da Terra",
+    "Dificuldade":"Dificil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_10",
+    "Pergunta":"A Lua completa uma volta ao redor da Terra em aproximadamente 30 dias",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_11",
+    "Pergunta":"O Brasil conquistou sua independência de Portugal com a assinatura de um tratado internacional",
+    "Dificuldade":"Medio",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_12",
+    "Pergunta":"O DNA humano é composto por quatro bases nitrogenadas: adenina, timina, citosina e guanina",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_13",
+    "Pergunta":"O hemisfério Sul é completamente livre de desertos",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_14",
+    "Pergunta":"A energia nuclear é produzida a partir do fenômeno da fissão ou fusão de átomos",
+    "Dificuldade":"Dificil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_15",
+    "Pergunta":"O petróleo é considerado uma fonte de energia renovável",
+    "Dificuldade":"Facil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_16",
+    "Pergunta":"A guerra dos Cem Anos durou mais de um século",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_17",
+    "Pergunta":"O sol é uma estrela da classe G2V",
+    "Dificuldade":"Dificil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_18",
+    "Pergunta":"O cérebro humano é composto por duas partes principais: hemisfério esquerdo e direito",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_19",
+    "Pergunta":"A água cobre mais de 70% da superfície da Terra",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_20",
+    "Pergunta":"O açúcar é um tipo de carboidrato simples",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_21",
+    "Pergunta":"O pH da água pura é 7 em temperatura ambiente",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_22",
+    "Pergunta":"O Brasil aboliu a escravidão em 1888 com a assinatura da Lei Áurea",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_23",
+    "Pergunta":"O sol gira em torno da Terra",
+    "Dificuldade":"Facil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_24",
+    "Pergunta":"A camada de ozônio protege a Terra contra radiação ultravioleta",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_25",
+    "Pergunta":"O mercúrio é líquido à temperatura ambiente",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_26",
+    "Pergunta":"O Brasil está localizado inteiramente no hemisfério norte",
+    "Dificuldade":"Facil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_27",
+    "Pergunta":"A gravidade na Lua é menor que na Terra",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_28",
+    "Pergunta":"A Amazonia é o maior bioma do Brasil",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_29",
+    "Pergunta":"O açúcar é um nutriente essencial para o crescimento humano",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_30",
+    "Pergunta":"O aço é uma liga de ferro e carbono",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_31",
+    "Pergunta":"O Golfo do México está localizado na América do Norte",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_32",
+    "Pergunta":"A Revolução Industrial começou na Alemanha",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_33",
+    "Pergunta":"O Brasil possui a maior reserva de água doce superficial do mundo",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_34",
+    "Pergunta":"O Mercúrio é o planeta mais quente do Sistema Solar",
+    "Dificuldade":"Medio",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_35",
+    "Pergunta":"A fotossíntese ocorre em cloroplastos das células vegetais",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_36",
+    "Pergunta":"A Grande Muralha da China é visível a olho nu do espaço",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_37",
+    "Pergunta":"O Brasil tem nove países vizinhos",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_38",
+    "Pergunta":"O Java é um sistema operacional",
+    "Dificuldade":"Facil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_39",
+    "Pergunta":"A camada terrestre chamada litosfera é sólida",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_40",
+    "Pergunta":"O alumínio é mais leve que o ferro",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_41",
+    "Pergunta":"O Brasil é o maior país da América do Sul em extensão territorial",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_42",
+    "Pergunta":"O Monte Kilimanjaro está localizado na África do Sul",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_43",
+    "Pergunta":"O Sol possui mais de 99% da massa do Sistema Solar",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_44",
+    "Pergunta":"O pinguim é um animal que vive no hemisfério Norte",
+    "Dificuldade":"Dificil",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_45",
+    "Pergunta":"A fotossíntese converte CO2 e água em glicose e oxigênio",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_46",
+    "Pergunta":"O Brasil é banhado pelo Oceano Atlântico",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_47",
+    "Pergunta":"A Estátua da Liberdade está localizada em Paris",
+    "Dificuldade":"Medio",
+    "correta":["F","f"]
+    },
+    {
+    "id":"Pergunta_48",
+    "Pergunta":"O petróleo é formado a partir da decomposição de matéria orgânica",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_49",
+    "Pergunta":"O aço inoxidável contém cromo em sua composição",
+    "Dificuldade":"Medio",
+    "correta":["V","v"]
+    },
+    {
+    "id":"Pergunta_50",
+    "Pergunta":"A penicilina foi descoberta por Alexander Fleming",
+    "Dificuldade":"Facil",
+    "correta":["V","v"]
+    }
+
+]
