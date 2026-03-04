@@ -1,0 +1,32 @@
+[
+    {
+         "id":"Pergunta_1",
+        "Pergunta":"Qual é a capital de França?",
+        "opcoes":["A. Roma","B. Paris","C. Madrid","D. Berlim"],
+        "Dificuldade":"Facil",
+        "Bomba": ["C", "c"],
+        "correta":["B","b"]
+
+
+
+
+    },
+    {
+
+          "id":"Pergunta_2",
+        "Pergunta":"O que estrelas medias como o Sol tendem a se formar no seu estagio final de vida?",
+        "opcoes":["A. Estrela de Neutrões","B. Supernova","C. Gigante vermelha,","D. Buraco Negro"],
+        "Dificuldade":"Medio",
+        "Bomba": ["a", "A"],
+        "correta":["C","c"]
+
+
+    }
+
+
+
+
+
+
+
+]

@@ -116,14 +116,14 @@ def verdade_falso(dicionario):
     else:
         
         if dicionario['Dificuldade'] == "Facil":
-            input(f"❌❌❌❌voce errou  perdeu 1 ponto, aperte enter pra continuar.....❌❌❌❌")
+            input(f"❌❌❌❌voce errou perdeu 1 ponto, aperte enter pra continuar.....❌❌❌❌")
             return -1
 
         elif dicionario['Dificuldade'] == "Medio":
-            input(f"❌❌❌❌voce errou  perdeu 2 pontos, aperte enter pra continuar.....❌❌❌❌")
+            input(f"❌❌❌❌voce errou perdeu 2 pontos, aperte enter pra continuar.....❌❌❌❌")
             return -2
         elif dicionario['Dificuldade']:
-            input(f"❌❌❌❌voce errou  perdeu 3 pontos, aperte enter pra continuar.....❌❌❌❌")
+            input(f"❌❌❌❌voce errou perdeu 3 pontos, aperte enter pra continuar.....❌❌❌❌")
             return -3
             
     print("\n")

@@ -6,7 +6,7 @@ nome = input("digite seu nome: ")
 pontos = 0 
 
 from logica import guardar_info, carregar_perguntas, mostrar_regras, mostrar_info, dar_pontos, responder, verdade_falso
-from menu import mostrar_menu, mostrar_jogos
+from menu import mostrar_menu, mostrar_jogos, mostrar_pontos
 
 #TESTE debug de guardar pontuação
 #testanto_pontuação = int(input("Escreva um numero pra pontuação: "))
@@ -58,7 +58,8 @@ while True:
                     input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
                     print("\n")
                     continue
-                input("🎉🎉 FIM DO QUIZ 🎉🎉")
+            
+            input("🎉🎉 FIM DO QUIZ 🎉🎉")
         #Jogador quer Jogar Verdadeiro ou Falso
         elif escolhi_jogo == "2":
             perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
@@ -88,16 +89,16 @@ while True:
                 try:
                     pontos_ganhos = verdade_falso(dic)
                     pontos = pontos + pontos_ganhos
-                    guardar_info(nome, pontos, "pontuacao.json")
+                    guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json")
 
                 except ValueError:
-                    input("Voce digitou algo aem das opções então não ganhou nenhum ponto")
+                    input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
                     print("\n")
                     continue
                 
             input("🎉🎉 FIM DO QUIZ 🎉🎉")
         elif escolhi_jogo == "3":
-            perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
+            perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
             lista_aleatoria = []
             x = 0
             while x < 15:
@@ -127,16 +128,24 @@ while True:
                     guardar_info(nome, pontos, "pontuacao.json")
 
                 except ValueError:
-                    input("Voce digitou algo aem das opções então não ganhou nenhum ponto")
+                    input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
                     print("\n")
                     continue
                 
             input("🎉🎉 FIM DO QUIZ 🎉🎉")
     #Jogador escolher ir ver pontuação
     elif escolhi == "2":
+        escolhi_pontos = mostrar_pontos()
         print(f"Então vamos pra pontuação {nome}")
         print("\n")
-        mostrar_info("pontuacao.json")
+        if escolhi_pontos == "1":
+
+            mostrar_info("pontuacao.json")
+        elif escolhi_pontos == "2":
+            mostrar_info("pontuacao_verdadeiro_falso.json")
+        elif escolhi_pontos == "3":
+            mostrar_info("pontuacao_bomba.json")
+        
     #Jogador quer ver as regras
     elif escolhi == "3":
         print(f"Então vamos para as regras, {nome}")

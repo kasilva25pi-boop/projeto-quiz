@@ -21,7 +21,7 @@ def mostrar_jogos():
     print("-----------1. 🎮Jogar modo Classico----------------------------------------------")
     print("-----------2. 🎎Jogar Verdadeira ou falso------------------------------------------")
     print("-----------3. 💣Jogar Modo Bomba---------------------------------------------")
-    print("-----------4. 🚶‍♂️Voltar pro Menu-----------------------------------------------")
+    print("-----------Enter. 🚶‍♂️Voltar pro Menu-----------------------------------------------")
   
     escolha = input("Escreva a opção desejada de acordo com o numero: ")
     print("\n")
@@ -29,3 +29,15 @@ def mostrar_jogos():
     return escolha
 
 
+def mostrar_pontos():
+    print("\n")
+    print("-----------🎮Escolha Pontos de qual modalidade voce deseja ver🎮---------")
+    print("-----------1. 🎮Ver Pontos do modo Classico----------------------------------------------")
+    print("-----------2. 🎎Ver Pontos do Verdadeira ou falso------------------------------------------")
+    print("-----------3. 💣Ver Pontos do Modo Bomba---------------------------------------------")
+    print("-----------Enter. 🚶‍♂️Voltar pro Menu-----------------------------------------------")
+  
+    escolha = input("Escreva a opção desejada de acordo com o numero: ")
+    print("\n")
+
+    return escolha
