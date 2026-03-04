@@ -72,7 +72,7 @@ while True:
                     lista_aleatoria.append(pergunta_random)
                     x += 1
             pontos = 0
-            guardar_info(nome, pontos, "pontuacao.json") 
+            guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
             input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
             print("\n")
 
