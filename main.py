@@ -94,6 +94,43 @@ while True:
                     input("Voce digitou algo aem das opções então não ganhou nenhum ponto")
                     print("\n")
                     continue
+                
+            input("🎉🎉 FIM DO QUIZ 🎉🎉")
+        elif escolhi_jogo == "3":
+            perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
+            lista_aleatoria = []
+            x = 0
+            while x < 15:
+                pergunta_random = random.choice(perguntas_carregadas)
+                if pergunta_random in lista_aleatoria:
+                    continue
+                else:
+                    lista_aleatoria.append(pergunta_random)
+                    x += 1
+            pontos = 0
+            guardar_info(nome, pontos, "pontuacao.json") 
+            input(f"VAMOS JOGAR Pergunta Bomba {nome}!!!!!")
+            print("\n")
+
+            
+
+            for dic in lista_aleatoria:
+                
+                print(dic['id'])
+                print(dic['Pergunta'])
+                print(f"Dificuldade: {dic['Dificuldade']}", "\n")
+                print("Verdadeiro ou Falso?")
+                print("----------------------------------------")
+                try:
+                    pontos_ganhos = verdade_falso(dic)
+                    pontos = pontos + pontos_ganhos
+                    guardar_info(nome, pontos, "pontuacao.json")
+
+                except ValueError:
+                    input("Voce digitou algo aem das opções então não ganhou nenhum ponto")
+                    print("\n")
+                    continue
+                
             input("🎉🎉 FIM DO QUIZ 🎉🎉")
     #Jogador escolher ir ver pontuação
     elif escolhi == "2":

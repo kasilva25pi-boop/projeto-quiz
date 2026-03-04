@@ -8,7 +8,7 @@ def mostrar_menu():
     print("-----------4. 🚶‍♂️Sair-----------------------------------------------")
     
     
-    escolha = input("Escreva a opção desejada: ")
+    escolha = input("Escreva a opção desejada de acordo com o numero: ")
     print("\n")
 
     return escolha
@@ -23,7 +23,7 @@ def mostrar_jogos():
     print("-----------3. 💣Jogar Modo Bomba---------------------------------------------")
     print("-----------4. 🚶‍♂️Voltar pro Menu-----------------------------------------------")
   
-    escolha = input("Escreva a opção desejada: ")
+    escolha = input("Escreva a opção desejada de acordo com o numero: ")
     print("\n")
 
     return escolha
