@@ -20,132 +20,151 @@ while True:
     
     #Ultilizador escolheu jogar        
     if escolhi == "1":
-        
-        escolhi_jogo = mostrar_jogos()
-        #escolheu Jogar o modo classico de perguntas de conhecimento geral
-        if escolhi_jogo == "1":
-            perguntas_carregadas = carregar_perguntas("perguntas.json")
-            lista_aleatoria = []
-            x = 0
-            while x < 15:
-                pergunta_random = random.choice(perguntas_carregadas)
-                if pergunta_random in lista_aleatoria:
-                    continue
-                else:
-                    lista_aleatoria.append(pergunta_random)
-                    x += 1
-            pontos = 0
-            guardar_info(nome, pontos, "pontuacao.json") 
-            input(f"VAMOS JOGAR {nome}!!!!!")
-            print("\n")
+        #mostra o menu dos jogos 
+        while True:
+            escolhi_jogo = mostrar_jogos()
+            #escolheu Jogar o modo classico de perguntas de conhecimento geral
+                
+            if escolhi_jogo == "1":
+                perguntas_carregadas = carregar_perguntas("perguntas.json")
+                lista_aleatoria = []
+                x = 0
+                while x < 15:
+                    pergunta_random = random.choice(perguntas_carregadas)
+                    if pergunta_random in lista_aleatoria:
+                        continue
+                    else:
+                        lista_aleatoria.append(pergunta_random)
+                        x += 1
+                pontos = 0
+                guardar_info(nome, pontos, "pontuacao.json") 
+                input(f"VAMOS JOGAR {nome}!!!!!")
+                print("\n")
 
+                    
+
+                for dic in lista_aleatoria:
+                        
+                    print(dic['id'])
+                    print(dic['Pergunta'])
+                    print(f"Dificuldade: {dic['Dificuldade']}", "\n")
+                    for i in dic['opcoes']:
+                        print(i)
+                    print("----------------------------------------")
+                    try:
+                        pontos_ganhos = responder(dic, False)
+                        pontos = pontos + pontos_ganhos
+                        guardar_info(nome, pontos, "pontuacao.json")
+
+                    except ValueError:
+                        input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
+                        print("\n")
+                        continue
+                    
+                input("🎉🎉 FIM DO QUIZ 🎉🎉")
+                    
+            #Jogador quer Jogar Verdadeiro ou Falso
+            elif escolhi_jogo == "2":
+                perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
+                lista_aleatoria = []
+                x = 0
+                while x < 15:
+                    pergunta_random = random.choice(perguntas_carregadas)
+                    if pergunta_random in lista_aleatoria:
+                        continue
+                    else:
+                        lista_aleatoria.append(pergunta_random)
+                        x += 1
+                pontos = 0
+                guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
+                input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
+                print("\n")
+
+                    
+
+                for dic in lista_aleatoria:
+                        
+                    print(dic['id'])
+                    print(dic['Pergunta'])
+                    print(f"Dificuldade: {dic['Dificuldade']}", "\n")
+                    print("Verdadeiro ou Falso?")
+                    print("----------------------------------------")
+                    try:
+                        pontos_ganhos = verdade_falso(dic)
+                        pontos = pontos + pontos_ganhos
+                        guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json")
+
+                    except ValueError:
+                        input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
+                        print("\n")
+                        continue
             
+                        
+                input("🎉🎉 FIM DO QUIZ 🎉🎉")
 
-            for dic in lista_aleatoria:
-                
-                print(dic['id'])
-                print(dic['Pergunta'])
-                print(f"Dificuldade: {dic['Dificuldade']}", "\n")
-                for i in dic['opcoes']:
-                    print(i)
-                print("----------------------------------------")
-                try:
-                    pontos_ganhos = responder(dic, False)
-                    pontos = pontos + pontos_ganhos
-                    guardar_info(nome, pontos, "pontuacao.json")
+            elif escolhi_jogo == "3":
+                perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
+                lista_aleatoria = []
+                x = 0
+                while x < 15:
+                    pergunta_random = random.choice(perguntas_carregadas)
+                    if pergunta_random in lista_aleatoria:
+                        continue
+                    else:
+                        lista_aleatoria.append(pergunta_random)
+                        x += 1
+                pontos = 0
+                guardar_info(nome, pontos, "pontuacao_bomba.json") 
+                input(f"VAMOS JOGAR Pergunta BOMBA {nome}🤪🤪!!!!!")
+                print("\n")
 
-                except ValueError:
-                    input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
-                    print("\n")
-                    continue
-            
-            input("🎉🎉 FIM DO QUIZ 🎉🎉")
-        #Jogador quer Jogar Verdadeiro ou Falso
-        elif escolhi_jogo == "2":
-            perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
-            lista_aleatoria = []
-            x = 0
-            while x < 15:
-                pergunta_random = random.choice(perguntas_carregadas)
-                if pergunta_random in lista_aleatoria:
-                    continue
-                else:
-                    lista_aleatoria.append(pergunta_random)
-                    x += 1
-            pontos = 0
-            guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
-            input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
-            print("\n")
+                    
+                #Mostrando as perguntas de bomba
+                for dic in lista_aleatoria:
+                        
+                    print(dic['id'])
+                    print(dic['Pergunta'])
+                    print(f"Dificuldade: {dic['Dificuldade']}", "\n")
+                    for i in dic['opcoes']:
+                        print(i)
+                    print("----------------------------------------")
+                    try:
+                        pontos_ganhos = responder(dic, True)
+                        if pontos_ganhos == "bomba":
+                            break
+                        else:
+                            
+                            pontos = pontos + pontos_ganhos
+                            guardar_info(nome, pontos, "pontuacao_bomba.json")
 
-            
-
-            for dic in lista_aleatoria:
-                
-                print(dic['id'])
-                print(dic['Pergunta'])
-                print(f"Dificuldade: {dic['Dificuldade']}", "\n")
-                print("Verdadeiro ou Falso?")
-                print("----------------------------------------")
-                try:
-                    pontos_ganhos = verdade_falso(dic)
-                    pontos = pontos + pontos_ganhos
-                    guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json")
-
-                except ValueError:
-                    input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
-                    print("\n")
-                    continue
-                
-            input("🎉🎉 FIM DO QUIZ 🎉🎉")
-        elif escolhi_jogo == "3":
-            perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
-            lista_aleatoria = []
-            x = 0
-            while x < 15:
-                pergunta_random = random.choice(perguntas_carregadas)
-                if pergunta_random in lista_aleatoria:
-                    continue
-                else:
-                    lista_aleatoria.append(pergunta_random)
-                    x += 1
-            pontos = 0
-            guardar_info(nome, pontos, "pontuacao_bomba.json") 
-            input(f"VAMOS JOGAR Pergunta Bomba {nome}!!!!!")
-            print("\n")
-
-            
-            #Mostrando as perguntas de bomba
-            for dic in lista_aleatoria:
-                
-                print(dic['id'])
-                print(dic['Pergunta'])
-                print(f"Dificuldade: {dic['Dificuldade']}", "\n")
-                for i in dic['opcoes']:
-                    print(i)
-                print("----------------------------------------")
-                try:
-                    pontos_ganhos = responder(dic, True)
-                    pontos = pontos + pontos_ganhos
-                    guardar_info(nome, pontos, "pontuacao_bomba.json")
-
-                except ValueError:
-                    input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
-                    print("\n")
-                    continue
-                
-            input("🎉🎉 FIM DO QUIZ 🎉🎉")
+                    except ValueError:
+                        input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
+                        print("\n")
+                        continue
+                        
+                input("🎉🎉 FIM DO QUIZ 🎉🎉")
+                    
+            elif escolhi_jogo == "4":
+                print("Ok Voltando pro Menu principal")
+                break    
+                    
     #Jogador escolher ir ver pontuação
     elif escolhi == "2":
-        escolhi_pontos = mostrar_pontos()
         print(f"Então vamos pra pontuação {nome}")
         print("\n")
-        if escolhi_pontos == "1":
+        while True:
+            escolhi_pontos = mostrar_pontos()
+            
+            if escolhi_pontos == "1":
 
-            mostrar_info("pontuacao.json")
-        elif escolhi_pontos == "2":
-            mostrar_info("pontuacao_verdadeiro_falso.json")
-        elif escolhi_pontos == "3":
-            mostrar_info("pontuacao_bomba.json")
+                mostrar_info("pontuacao.json")
+                
+            elif escolhi_pontos == "2":
+                mostrar_info("pontuacao_verdadeiro_falso.json")
+            elif escolhi_pontos == "3":
+                mostrar_info("pontuacao_bomba.json")
+            elif escolhi_pontos == "4":
+                break
         
     #Jogador quer ver as regras
     elif escolhi == "3":

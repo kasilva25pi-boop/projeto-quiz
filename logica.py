@@ -103,11 +103,15 @@ def responder(dicionario, tem_bomba):
             input("Esta...............")
             input("🎆🎆🎆💣💣💣💣ERRADA E È UMA BOMBA VOCE PERDEU💣💣💣💣🎆🎆🎆")
             
+            return "bomba"
             print("\n")
 
             
         else:
-            input("❌❌❌❌voce errou, aperte enter pra continuar.....❌❌❌❌")
+            input("A sua resposta está.......")
+            input("Esta.........")
+            input("Esta...............")
+            input("❌❌❌❌Errada, aperte enter pra continuar.....❌❌❌❌")
             print("\n")
             ganho = 0
             return ganho
