@@ -50,7 +50,7 @@ while True:
                     print(i)
                 print("----------------------------------------")
                 try:
-                    pontos_ganhos = responder(dic)
+                    pontos_ganhos = responder(dic, False)
                     pontos = pontos + pontos_ganhos
                     guardar_info(nome, pontos, "pontuacao.json")
 
@@ -109,23 +109,24 @@ while True:
                     lista_aleatoria.append(pergunta_random)
                     x += 1
             pontos = 0
-            guardar_info(nome, pontos, "pontuacao.json") 
+            guardar_info(nome, pontos, "pontuacao_bomba.json") 
             input(f"VAMOS JOGAR Pergunta Bomba {nome}!!!!!")
             print("\n")
 
             
-
+            #Mostrando as perguntas de bomba
             for dic in lista_aleatoria:
                 
                 print(dic['id'])
                 print(dic['Pergunta'])
                 print(f"Dificuldade: {dic['Dificuldade']}", "\n")
-                print("Verdadeiro ou Falso?")
+                for i in dic['opcoes']:
+                    print(i)
                 print("----------------------------------------")
                 try:
-                    pontos_ganhos = verdade_falso(dic)
+                    pontos_ganhos = responder(dic, True)
                     pontos = pontos + pontos_ganhos
-                    guardar_info(nome, pontos, "pontuacao.json")
+                    guardar_info(nome, pontos, "pontuacao_bomba.json")
 
                 except ValueError:
                     input("Voce digitou algo alem das opções então não ganhou nenhum ponto")

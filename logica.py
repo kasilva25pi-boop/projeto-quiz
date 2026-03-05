@@ -82,22 +82,53 @@ def dar_pontos(dificuldade):
             
      
 
-def responder(dicionario):
-    
-    opcao = input("Digite sua resposta entre A, B, C e D: ")
+def responder(dicionario, tem_bomba):
 
-    if opcao in dicionario['correta']:
-        ganho = dar_pontos(dicionario['Dificuldade'])
-        input(f"✅✅✅✅ Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s) ✅✅✅✅")
-        print("\n")
-        
-        return ganho
-        
-    else:
-        input("❌❌❌❌voce errou, aperte enter pra continuar.....❌❌❌❌")
-        print("\n")
-        ganho = 0
-        return ganho
+    bomba = tem_bomba
+    if bomba == True:
+        opcao = input("Digite sua resposta entre A, B, C ou D: ")
+
+        if opcao in dicionario['correta']:
+            ganho = dar_pontos(dicionario['Dificuldade'])
+            input("A sua resposta está.......")
+            input("Esta.........")
+            input("Esta...............")
+            input(f"✅✅✅✅ Correta!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s) ✅✅✅✅")
+            print("\n")
+            
+            return ganho
+        elif opcao in dicionario['Bomba']:
+            input("A sua resposta está.......")
+            input("Esta.........")
+            input("Esta...............")
+            input("🎆🎆🎆💣💣💣💣ERRADA E È UMA BOMBA VOCE PERDEU💣💣💣💣🎆🎆🎆")
+            
+            print("\n")
+
+            
+        else:
+            input("❌❌❌❌voce errou, aperte enter pra continuar.....❌❌❌❌")
+            print("\n")
+            ganho = 0
+            return ganho
+
+
+    elif bomba == False:
+
+        opcao = input("Digite sua resposta entre A, B, C ou D: ")
+
+        if opcao in dicionario['correta']:
+            ganho = dar_pontos(dicionario['Dificuldade'])
+            input(f"✅✅✅✅ Voce acertou!!!!!!!, por ser uma pergunta {dicionario['Dificuldade']} voce ganhou {ganho} ponto(s) ✅✅✅✅")
+            print("\n")
+            
+            return ganho
+            
+        else:
+            input("❌❌❌❌voce errou, aperte enter pra continuar.....❌❌❌❌")
+            print("\n")
+            ganho = 0
+            return ganho
 
 
 

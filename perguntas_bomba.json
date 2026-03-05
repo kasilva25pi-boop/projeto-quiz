@@ -1,32 +1,404 @@
 [
     {
-         "id":"Pergunta_1",
-        "Pergunta":"Qual é a capital de França?",
-        "opcoes":["A. Roma","B. Paris","C. Madrid","D. Berlim"],
-        "Dificuldade":"Facil",
-        "Bomba": ["C", "c"],
-        "correta":["B","b"]
-
-
-
-
+    "id":"Pergunta_1",
+    "Pergunta":"Qual é o maior país da América do Sul em área territorial?",
+    "opcoes":["A. Argentina","B. Brasil","C. Peru","D. Colômbia"],
+    "Dificuldade":"Facil",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
     },
     {
-
-          "id":"Pergunta_2",
-        "Pergunta":"O que estrelas medias como o Sol tendem a se formar no seu estagio final de vida?",
-        "opcoes":["A. Estrela de Neutrões","B. Supernova","C. Gigante vermelha,","D. Buraco Negro"],
-        "Dificuldade":"Medio",
-        "Bomba": ["a", "A"],
-        "correta":["C","c"]
-
-
+    "id":"Pergunta_2",
+    "Pergunta":"Qual cientista formulou as três leis do movimento?",
+    "opcoes":["A. Newton","B. Einstein","C. Galileu","D. Kepler"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_3",
+    "Pergunta":"Qual é o planeta mais distante do Sol atualmente reconhecido?",
+    "opcoes":["A. Saturno","B. Netuno","C. Urano","D. Júpiter"],
+    "Dificuldade":"Facil",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_4",
+    "Pergunta":"Qual elemento químico tem símbolo Na?",
+    "opcoes":["A. Nitrogénio","B. Níquel","C. Sódio","D. Neon"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_5",
+    "Pergunta":"Qual oceano banha a costa leste dos Estados Unidos?",
+    "opcoes":["A. Atlântico","B. Pacífico","C. Índico","D. Ártico"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_6",
+    "Pergunta":"Qual país possui a maior população do mundo em 2024?",
+    "opcoes":["A. China","B. Índia","C. Estados Unidos","D. Indonésia"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_7",
+    "Pergunta":"Qual é o menor continente do planeta?",
+    "opcoes":["A. Europa","B. Antártida","C. Oceania","D. América do Sul"],
+    "Dificuldade":"Facil",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_8",
+    "Pergunta":"Qual órgão humano é responsável por bombear o sangue?",
+    "opcoes":["A. Pulmão","B. Coração","C. Rim","D. Fígado"],
+    "Dificuldade":"Facil",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_9",
+    "Pergunta":"Qual é a capital do Canadá?",
+    "opcoes":["A. Toronto","B. Vancouver","C. Ottawa","D. Montreal"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_10",
+    "Pergunta":"Qual planeta possui os anéis mais visíveis?",
+    "opcoes":["A. Saturno","B. Marte","C. Terra","D. Vénus"],
+    "Dificuldade":"Facil",
+    "Bomba":["B","b"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_11",
+    "Pergunta":"Qual é o maior felino do mundo?",
+    "opcoes":["A. Tigre","B. Leão","C. Leopardo","D. Onça"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_12",
+    "Pergunta":"Qual é o rio mais longo do mundo segundo muitas medições recentes?",
+    "opcoes":["A. Nilo","B. Amazonas","C. Yangtzé","D. Mississippi"],
+    "Dificuldade":"Dificil",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_13",
+    "Pergunta":"Qual país sediou a Copa do Mundo de 2018?",
+    "opcoes":["A. Rússia","B. Brasil","C. Alemanha","D. Qatar"],
+    "Dificuldade":"Medio",
+    "Bomba":["B","b"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_14",
+    "Pergunta":"Qual gás compõe a maior parte da atmosfera da Terra?",
+    "opcoes":["A. Oxigénio","B. Nitrogénio","C. Hidrogénio","D. Hélio"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_15",
+    "Pergunta":"Qual país tem formato geográfico semelhante a uma bota?",
+    "opcoes":["A. Espanha","B. Itália","C. Grécia","D. Turquia"],
+    "Dificuldade":"Facil",
+    "Bomba":["A","a"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_16",
+    "Pergunta":"Qual instrumento é usado para observar estrelas e planetas?",
+    "opcoes":["A. Microscópio","B. Telescópio","C. Barómetro","D. Termómetro"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_17",
+    "Pergunta":"Qual é a moeda oficial do Japão?",
+    "opcoes":["A. Yuan","B. Won","C. Iene","D. Baht"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_18",
+    "Pergunta":"Qual planeta é conhecido como gigante gasoso?",
+    "opcoes":["A. Júpiter","B. Marte","C. Mercúrio","D. Terra"],
+    "Dificuldade":"Facil",
+    "Bomba":["B","b"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_19",
+    "Pergunta":"Quem pintou a Capela Sistina?",
+    "opcoes":["A. Michelangelo","B. Leonardo da Vinci","C. Rafael","D. Donatello"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_20",
+    "Pergunta":"Qual país é conhecido como terra do sol nascente?",
+    "opcoes":["A. Coreia do Sul","B. Japão","C. Tailândia","D. Vietname"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_21",
+    "Pergunta":"Qual animal é o mais rápido em terra?",
+    "opcoes":["A. Leão","B. Cavalo","C. Guepardo","D. Antílope"],
+    "Dificuldade":"Facil",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_22",
+    "Pergunta":"Qual país possui a maior floresta tropical do mundo?",
+    "opcoes":["A. Brasil","B. Congo","C. Indonésia","D. Peru"],
+    "Dificuldade":"Medio",
+    "Bomba":["B","b"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_23",
+    "Pergunta":"Qual é o metal usado principalmente em fios elétricos?",
+    "opcoes":["A. Ferro","B. Cobre","C. Zinco","D. Níquel"],
+    "Dificuldade":"Facil",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_24",
+    "Pergunta":"Qual é o deserto mais quente do mundo?",
+    "opcoes":["A. Saara","B. Gobi","C. Kalahari","D. Atacama"],
+    "Dificuldade":"Medio",
+    "Bomba":["B","b"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_25",
+    "Pergunta":"Qual cientista desenvolveu a teoria da relatividade?",
+    "opcoes":["A. Newton","B. Einstein","C. Tesla","D. Bohr"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_26",
+    "Pergunta":"Qual é o maior arquipélago do mundo?",
+    "opcoes":["A. Japão","B. Filipinas","C. Indonésia","D. Maldivas"],
+    "Dificuldade":"Dificil",
+    "Bomba":["D","d"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_27",
+    "Pergunta":"Qual país inventou a pólvora?",
+    "opcoes":["A. China","B. Índia","C. Japão","D. Mongólia"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_28",
+    "Pergunta":"Qual é o maior órgão do corpo humano?",
+    "opcoes":["A. Cérebro","B. Fígado","C. Pele","D. Pulmão"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_29",
+    "Pergunta":"Qual planeta possui a maior gravidade?",
+    "opcoes":["A. Saturno","B. Júpiter","C. Netuno","D. Urano"],
+    "Dificuldade":"Dificil",
+    "Bomba":["A","a"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_30",
+    "Pergunta":"Qual é a capital da Argentina?",
+    "opcoes":["A. Buenos Aires","B. Santiago","C. Lima","D. Montevidéu"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["A","a"]
+    },
+    
+    {
+    "id":"Pergunta_31",
+    "Pergunta":"Qual é o metal mais abundante na crosta terrestre?",
+    "opcoes":["A. Ferro","B. Alumínio","C. Cobre","D. Zinco"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_32",
+    "Pergunta":"Qual país possui o maior número de habitantes da América do Sul?",
+    "opcoes":["A. Brasil","B. Argentina","C. Colômbia","D. Peru"],
+    "Dificuldade":"Facil",
+    "Bomba":["D","d"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_33",
+    "Pergunta":"Qual é o maior planeta rochoso do Sistema Solar?",
+    "opcoes":["A. Marte","B. Mercúrio","C. Terra","D. Vênus"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_34",
+    "Pergunta":"Qual é a capital da Austrália?",
+    "opcoes":["A. Sydney","B. Melbourne","C. Perth","D. Canberra"],
+    "Dificuldade":"Medio",
+    "Bomba":["B","b"],
+    "correta":["D","d"]
+    },
+    {
+    "id":"Pergunta_35",
+    "Pergunta":"Qual cientista criou as leis da genética?",
+    "opcoes":["A. Mendel","B. Darwin","C. Pasteur","D. Watson"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_36",
+    "Pergunta":"Qual é o maior lago de água doce do mundo por volume?",
+    "opcoes":["A. Lago Vitória","B. Lago Superior","C. Lago Baikal","D. Lago Michigan"],
+    "Dificuldade":"Dificil",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_37",
+    "Pergunta":"Qual planeta possui a maior quantidade de luas conhecidas?",
+    "opcoes":["A. Júpiter","B. Saturno","C. Urano","D. Netuno"],
+    "Dificuldade":"Dificil",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_38",
+    "Pergunta":"Qual país europeu possui mais área territorial?",
+    "opcoes":["A. França","B. Alemanha","C. Rússia","D. Espanha"],
+    "Dificuldade":"Facil",
+    "Bomba":["B","b"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_39",
+    "Pergunta":"Qual elemento químico possui símbolo Ag?",
+    "opcoes":["A. Ouro","B. Prata","C. Argônio","D. Alumínio"],
+    "Dificuldade":"Medio",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_40",
+    "Pergunta":"Qual é o animal terrestre mais rápido do mundo?",
+    "opcoes":["A. Antílope","B. Cavalo","C. Leão","D. Guepardo"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["D","d"]
+    },
+    {
+    "id":"Pergunta_41",
+    "Pergunta":"Qual país sediou a Copa do Mundo de 2002?",
+    "opcoes":["A. Japão e Coreia do Sul","B. Alemanha","C. França","D. Brasil"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_42",
+    "Pergunta":"Qual é o maior arquipélago do mundo?",
+    "opcoes":["A. Japão","B. Filipinas","C. Indonésia","D. Maldivas"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_43",
+    "Pergunta":"Qual é o ponto mais profundo dos oceanos?",
+    "opcoes":["A. Fossa das Marianas","B. Fossa do Japão","C. Fossa das Filipinas","D. Fossa de Tonga"],
+    "Dificuldade":"Dificil",
+    "Bomba":["D","d"],
+    "correta":["A","a"]
+    },
+    {
+    "id":"Pergunta_44",
+    "Pergunta":"Qual gás é essencial para a respiração humana?",
+    "opcoes":["A. Nitrogênio","B. Oxigênio","C. Hidrogênio","D. Hélio"],
+    "Dificuldade":"Facil",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_45",
+    "Pergunta":"Qual é a capital da Turquia?",
+    "opcoes":["A. Istambul","B. Esmirna","C. Ancara","D. Bursa"],
+    "Dificuldade":"Medio",
+    "Bomba":["B","b"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_46",
+    "Pergunta":"Qual planeta possui a maior velocidade orbital ao redor do Sol?",
+    "opcoes":["A. Vênus","B. Mercúrio","C. Marte","D. Terra"],
+    "Dificuldade":"Dificil",
+    "Bomba":["C","c"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_47",
+    "Pergunta":"Qual é o maior país da Europa Ocidental?",
+    "opcoes":["A. Alemanha","B. França","C. Espanha","D. Itália"],
+    "Dificuldade":"Medio",
+    "Bomba":["A","a"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_48",
+    "Pergunta":"Qual é o maior predador terrestre?",
+    "opcoes":["A. Urso-pardo","B. Urso-polar","C. Tigre","D. Leão"],
+    "Dificuldade":"Medio",
+    "Bomba":["D","d"],
+    "correta":["B","b"]
+    },
+    {
+    "id":"Pergunta_49",
+    "Pergunta":"Qual país possui mais pirâmides antigas?",
+    "opcoes":["A. México","B. Egito","C. Sudão","D. Peru"],
+    "Dificuldade":"Dificil",
+    "Bomba":["A","a"],
+    "correta":["C","c"]
+    },
+    {
+    "id":"Pergunta_50",
+    "Pergunta":"Qual estrela é a mais próxima da Terra depois do Sol?",
+    "opcoes":["A. Sirius","B. Alfa Centauri","C. Betelgeuse","D. Proxima Centauri"],
+    "Dificuldade":"Dificil",
+    "Bomba":["C","c"],
+    "correta":["D","d"]
     }
-
-
-
-
-
-
-
+    
 ]
