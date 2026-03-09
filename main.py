@@ -60,8 +60,8 @@ while True:
                         input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
                         print("\n")
                         continue
-                    
-                input("🎉🎉 FIM DO QUIZ 🎉🎉")
+                  
+                input(f"🎉🎉 FIM DO QUIZ 🎉🎉 Voce Ganhou {pontos}")
                     
             #Jogador quer Jogar Verdadeiro ou Falso
             elif escolhi_jogo == "2":
@@ -145,9 +145,12 @@ while True:
                 input("🎉🎉 FIM DO QUIZ 🎉🎉")
                     
             elif escolhi_jogo == "4":
-                print("Ok Voltando pro Menu principal")
+                print(f"Ok {nome} Voltando pro Menu principal")
                 break    
-                    
+            else:
+                input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
+                print("\n")
+        
     #Jogador escolher ir ver pontuação
     elif escolhi == "2":
         print(f"Então vamos pra pontuação {nome}")
@@ -164,7 +167,12 @@ while True:
             elif escolhi_pontos == "3":
                 mostrar_info("pontuacao_bomba.json")
             elif escolhi_pontos == "4":
+                print(f"Beleza meu nobre {nome} bora pro menu")
                 break
+            else:
+                input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
+                print("\n")
+        
         
     #Jogador quer ver as regras
     elif escolhi == "3":
