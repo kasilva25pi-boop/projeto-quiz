@@ -156,25 +156,31 @@ while True:
         
     #Jogador escolher ir ver pontuação
     elif escolhi == "2":
-        print(f"Então vamos pra pontuação {nome}")
-        print("\n")
-        while True:
-            escolhi_pontos = mostrar_pontos()
-            
-            if escolhi_pontos == "1":
+        try:
 
-                mostrar_info("pontuacao.json")
+            print(f"Então vamos pra pontuação {nome}")
+            print("\n")
+            while True:
+                escolhi_pontos = mostrar_pontos()
                 
-            elif escolhi_pontos == "2":
-                mostrar_info("pontuacao_verdadeiro_falso.json")
-            elif escolhi_pontos == "3":
-                mostrar_info("pontuacao_bomba.json")
-            elif escolhi_pontos == "4":
-                print(f"Beleza meu nobre {nome} bora pro menu")
-                break
-            else:
-                input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
-                print("\n")
+                if escolhi_pontos == "1":
+
+                    mostrar_info("pontuacao.json")
+                    
+                elif escolhi_pontos == "2":
+                    mostrar_info("pontuacao_verdadeiro_falso.json")
+                elif escolhi_pontos == "3":
+                    mostrar_info("pontuacao_bomba.json")
+                elif escolhi_pontos == "4":
+                    print(f"Beleza meu nobre {nome} bora pro menu")
+                    break
+                else:
+                    input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
+                    print("\n")
+        except FileNotFoundError:
+            print("houve um erro ao tentar abrir os pontos")
+            break
+
         
         
     #Jogador quer ver as regras
