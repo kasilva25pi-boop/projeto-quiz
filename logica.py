@@ -51,6 +51,7 @@ def mostrar_info(ficheiro_json):
         print("\n")
     else:
         print(f"A pessoa(s) com maior pontos é(são):")
+        print("\n")
         for i in nome_maior:
             print(i)
             print("- - - - - - - - - - - - - - - - - -")

@@ -24,22 +24,26 @@ while True:
         while True:
             escolhi_jogo = mostrar_jogos()
             #escolheu Jogar o modo classico de perguntas de conhecimento geral
-                
+                 
             if escolhi_jogo == "1":
-                perguntas_carregadas = carregar_perguntas("perguntas.json")
-                lista_aleatoria = []
-                x = 0
-                while x < 15:
-                    pergunta_random = random.choice(perguntas_carregadas)
-                    if pergunta_random in lista_aleatoria:
-                        continue
-                    else:
-                        lista_aleatoria.append(pergunta_random)
-                        x += 1
-                pontos = 0
-                guardar_info(nome, pontos, "pontuacao.json") 
-                input(f"VAMOS JOGAR {nome}!!!!!")
-                print("\n")
+                try: 
+                    perguntas_carregadas = carregar_perguntas("perguntas.json")
+                    lista_aleatoria = []
+                    x = 0
+                    while x < 15:
+                        pergunta_random = random.choice(perguntas_carregadas)
+                        if pergunta_random in lista_aleatoria:
+                            continue
+                        else:
+                            lista_aleatoria.append(pergunta_random)
+                            x += 1
+                    pontos = 0
+                    guardar_info(nome, pontos, "pontuacao.json") 
+                    input(f"VAMOS JOGAR {nome}!!!!!")
+                    print("\n")
+                except:
+                    input("TIvemos um problema ao tentar abrir o ficheiro")
+                    break
 
                     
 
@@ -173,6 +177,7 @@ while True:
                     mostrar_info("pontuacao_bomba.json")
                 elif escolhi_pontos == "4":
                     print(f"Beleza meu nobre {nome} bora pro menu")
+                    print("\n")
                     break
                 else:
                     input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
