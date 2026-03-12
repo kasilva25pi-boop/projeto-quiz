@@ -32,7 +32,7 @@ def guardar_info(nome, pontos, ficheiro):
 
 
 def mostrar_info(ficheiro_json):
-    maior = 0
+    maior = -100
     nome_maior = []
     with open(ficheiro_json, "r", encoding="utf-8") as f:
         pontuacao = json.load(f)
@@ -46,13 +46,17 @@ def mostrar_info(ficheiro_json):
 
         if pontuacao[nome] == maior:
             nome_maior.append(nome)
-    
-    if maior == 0:
-        print("A maior pontuação é zero, ou ninguem jogou ainda ou todo mundo é burro")
-    
+    if len(nome_maior) == 0:
+        print("não tem nada registrado ainda")
+        print("\n")
     else:
-        
-        print(f"A pessoa(s) com maior pontos é(são) {nome_maior} com: {maior} pontos")
+        print(f"A pessoa(s) com maior pontos é(são):")
+        for i in nome_maior:
+            print(i)
+            print("- - - - - - - - - - - - - - - - - -")
+        print("\n")
+        print(f"com {maior} pontos")
+
 
     input("Aperte Enter para voltar para o Menu: ")
     print("\n")
