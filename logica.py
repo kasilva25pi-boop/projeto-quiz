@@ -82,6 +82,7 @@ def mostrar_regras():
     print("nesse modo voce ira receber 15 perguntas por rodada de conhecimento geral que serão aleatorias, nela voce podera escolher,")
     print("entre A, B, C e D(podem ser minusculas), se a resposta estiver correta voce irá receber os pontos de acordo")
     print("com a dificuldade da pergunta, senão acertar, não recebe nada e passa pra proxima pergunta")
+    print("lembrado que se o jogador escrever algo além das opção ou não escrever nada, tambem sera considerado como uma resposta incorreta")
     print("no fim do quiz o programa informara quantos pontos voce recebeu de acordo com o nome que voce registrou no inicio")
     print("---------------------------------------------------------------------------------------------------------------------------")
     print("\n")
