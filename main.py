@@ -1,7 +1,7 @@
 
 import json
 import random
-nome = input("digite seu nome: ")
+nome = input("Olá, para começar, Escreva o seu nome: ")
 
 pontos = 0 
 
@@ -42,7 +42,7 @@ while True:
                     input(f"VAMOS JOGAR {nome}!!!!!")
                     print("\n")
                 except:
-                    input("TIvemos um problema ao tentar abrir o ficheiro")
+                    input("Tivemos um problema ao tentar abrir o ficheiro")
                     break
 
                     
@@ -70,20 +70,24 @@ while True:
                     
             #Jogador quer Jogar Verdadeiro ou Falso
             elif escolhi_jogo == "2":
-                perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
-                lista_aleatoria = []
-                x = 0
-                while x < 15:
-                    pergunta_random = random.choice(perguntas_carregadas)
-                    if pergunta_random in lista_aleatoria:
-                        continue
-                    else:
-                        lista_aleatoria.append(pergunta_random)
-                        x += 1
-                pontos = 0
-                guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
-                input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
-                print("\n")
+                try:
+                    perguntas_carregadas = carregar_perguntas("verdadeiro_falso.json")
+                    lista_aleatoria = []
+                    x = 0
+                    while x < 15:
+                        pergunta_random = random.choice(perguntas_carregadas)
+                        if pergunta_random in lista_aleatoria:
+                            continue
+                        else:
+                            lista_aleatoria.append(pergunta_random)
+                            x += 1
+                    pontos = 0
+                    guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
+                    input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
+                    print("\n")
+                except:
+                    input("tivemos um problema ao abrir as perguntas")
+                    break
 
                     
 
@@ -109,20 +113,24 @@ while True:
                 input(f"parabens {nome} Voce fez {pontos} pontos")
 
             elif escolhi_jogo == "3":
-                perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
-                lista_aleatoria = []
-                x = 0
-                while x < 15:
-                    pergunta_random = random.choice(perguntas_carregadas)
-                    if pergunta_random in lista_aleatoria:
-                        continue
-                    else:
-                        lista_aleatoria.append(pergunta_random)
-                        x += 1
-                pontos = 0
-                guardar_info(nome, pontos, "pontuacao_bomba.json") 
-                input(f"VAMOS JOGAR Pergunta BOMBA {nome}🤪🤪!!!!!")
-                print("\n")
+                try:
+                    perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
+                    lista_aleatoria = []
+                    x = 0
+                    while x < 15:
+                        pergunta_random = random.choice(perguntas_carregadas)
+                        if pergunta_random in lista_aleatoria:
+                            continue
+                        else:
+                            lista_aleatoria.append(pergunta_random)
+                            x += 1
+                    pontos = 0
+                    guardar_info(nome, pontos, "pontuacao_bomba.json") 
+                    input(f"VAMOS JOGAR Pergunta BOMBA {nome}🤪🤪!!!!!")
+                    print("\n")
+                except:
+                    input("Tivemos problema ao abrir as perguntas")
+                    break
 
                     
                 #Mostrando as perguntas de bomba
@@ -183,8 +191,10 @@ while True:
                     input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
                     print("\n")
         except FileNotFoundError:
-            print("houve um erro ao tentar abrir os pontos")
+            input("houve um erro ao tentar abrir os pontos")
             break
+        except:
+            input("Há um problema no ficheiros dos pontos")
 
         
         
