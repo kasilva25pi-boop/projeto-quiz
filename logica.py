@@ -1,36 +1,61 @@
 import json
 
 def carregar_perguntas(ficheiro_com_perguntas):
-    try:
         with open(ficheiro_com_perguntas, "r", encoding="utf-8") as f:
             lista_perguntas = json.load(f)
             return lista_perguntas
 
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Houve um erro no ficheiro")
-        return []
+    
+        
 
 
 def guardar_info(nome, pontos, ficheiro):
+    
+        with open(ficheiro, "r", encoding="utf-8") as f:
+            lista_carregada = json.load(f)
 
-    with open(ficheiro, "r", encoding="utf-8") as f:
-        lista_carregada = json.load(f)
+        informacao = {
 
-    informacao = {
+            nome : pontos
+        }
 
-        nome : pontos
-    }
-
-    lista_carregada[nome] = pontos
-    try:
+        lista_carregada[nome] = pontos
+        
         with open(ficheiro, "w", encoding="utf-8") as f:
             json.dump(lista_carregada, f, ensure_ascii=False, indent=4)
 
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Houve um erro no ficheiro")
-        return []
 
+def mostrar_info(ficheiro_json):
+    
+    with open(ficheiro_json, "r", encoding="utf-8") as f:
+        pontuacao = json.load(f)
+    if len(pontuacao) == 0:
+        input("Não tem registro ainda ainda")
+    else:
+        todos_pontos = []
+        nome_maior = []
+        
+        for ponto in pontuacao.values():
+            todos_pontos.append(ponto)
+        maior_pontos = max(todos_pontos)
+        for nome, pontos in pontuacao.items():
+            print(f"{nome}: {pontos}")
+            print("--------------")
+        input("Aperte Enter pra Continuar: ")  
+        for nome, pontos in pontuacao.items():
+            if pontuacao[nome] == maior_pontos:
+                nome_maior.append(nome)
+        print(f"A pessoa(s) com maior pontos é(são):")
+        for i in nome_maior:
+            print(i)
+            print("- - - - - - - - - - - - - - - - - -")
+        
+        print(f"com {maior_pontos} pontos")
+        print("\n")
+    input("Aperte Enter para voltar para o Menu: ")
+    print("\n")
 
+"""
 def mostrar_info(ficheiro_json):
     maior = -100
     nome_maior = []
@@ -41,13 +66,13 @@ def mostrar_info(ficheiro_json):
         print("--------------")
         if pontos >= maior:
             maior = pontos 
-            
+    input("Aperte Enter pra Continuar: ")        
     for nome, pontos in pontuacao.items():
-
+    
         if pontuacao[nome] == maior:
             nome_maior.append(nome)
     if len(nome_maior) == 0:
-        print("não tem nada registrado ainda")
+        input("não tem nada registrado ainda")
         print("\n")
     else:
         print(f"A pessoa(s) com maior pontos é(são):")
@@ -62,7 +87,7 @@ def mostrar_info(ficheiro_json):
     input("Aperte Enter para voltar para o Menu: ")
     print("\n")
 
-
+"""
 
 
 def mostrar_regras():
@@ -230,7 +255,7 @@ def verdade_falso(dicionario):
             input(f"❌❌❌❌voce errou perdeu 2 pontos, aperte enter pra continuar.....❌❌❌❌")
             print("\n")
             return -2
-        elif dicionario['Dificuldade']:
+        elif dicionario['Dificuldade'] == "Dificil":
             input(f"❌❌❌❌voce errou perdeu 3 pontos, aperte enter pra continuar.....❌❌❌❌")
             print("\n")
             return -3

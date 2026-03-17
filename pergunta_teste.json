@@ -1,0 +1,10 @@
+[
+    {
+    "id":"Pergunta_1",
+    "Pergunta":"Qual é a capital de França?",
+    "opcoes":["A. Roma","B. Paris","C. Madrid","D. Berlim"],
+    "Dificuldade":"Facil",
+    "correta":["B","b"]
+    }
+
+]

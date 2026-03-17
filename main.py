@@ -2,6 +2,13 @@
 import json
 import random
 nome = input("Olá, para começar, Escreva o seu nome: ")
+print("\n")
+while True:
+    if not nome.strip():
+        nome = input("esse nome é invalido digite novamente: ")
+        print("\n")
+    else:
+        break
 
 pontos = 0 
 
@@ -29,6 +36,9 @@ while True:
                 try: 
                     perguntas_carregadas = carregar_perguntas("perguntas.json")
                     lista_aleatoria = []
+                    if len(lista_aleatoria) < 15:
+                        print("a lista tem que ter no minimo 15 perguntas")
+                        break
                     x = 0
                     while x < 15:
                         pergunta_random = random.choice(perguntas_carregadas)
@@ -41,7 +51,10 @@ while True:
                     guardar_info(nome, pontos, "pontuacao.json") 
                     input(f"VAMOS JOGAR {nome}!!!!!")
                     print("\n")
-                except:
+                except FileNotFoundError:
+                    input("Não achamos esse ficheiro com perguntas")
+                    break
+                except json.JSONDecodeError:
                     input("Tivemos um problema ao tentar abrir o ficheiro")
                     break
 
@@ -58,7 +71,11 @@ while True:
                     try:
                         pontos_ganhos = responder(dic, False)
                         pontos = pontos + pontos_ganhos
-                        guardar_info(nome, pontos, "pontuacao.json")
+                        try:
+                            guardar_info(nome, pontos, "pontuacao.json")
+                        except json.JSONDecodeError:
+                            print("Erro ao abrir o ficheiro de pontos")
+                            break
 
                     except ValueError:
                         input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
@@ -85,7 +102,10 @@ while True:
                     guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
                     input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
                     print("\n")
-                except:
+                except FileNotFoundError:
+                    input("Não achamos esse ficheiro com perguntas")
+                    break
+                except json.JSONDecodeError:
                     input("tivemos um problema ao abrir as perguntas")
                     break
 
@@ -101,7 +121,11 @@ while True:
                     try:
                         pontos_ganhos = verdade_falso(dic)
                         pontos = pontos + pontos_ganhos
-                        guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json")
+                        try:
+                            guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json")
+                        except json.JSONDecodeError:
+                            print("Ocorreu um erro ao abrir o ficheiro JSON dos pontos")
+                            break
 
                     except ValueError:
                         input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
@@ -111,28 +135,37 @@ while True:
                         
                 input("🎉🎉 FIM DO QUIZ 🎉🎉")
                 input(f"parabens {nome} Voce fez {pontos} pontos")
-
+            #Usuario quer Jogar pergunta BOMBA
             elif escolhi_jogo == "3":
                 try:
                     perguntas_carregadas = carregar_perguntas("perguntas_bomba.json")
-                    lista_aleatoria = []
-                    x = 0
-                    while x < 15:
-                        pergunta_random = random.choice(perguntas_carregadas)
-                        if pergunta_random in lista_aleatoria:
-                            continue
-                        else:
-                            lista_aleatoria.append(pergunta_random)
-                            x += 1
-                    pontos = 0
+                except FileNotFoundError:
+                    input("Não achamos esse ficheiro com perguntas")
+                    break
+                except json.JSONDecodeError:
+                    input("Tivemos problema ao abrir as perguntas")
+                    break
+                lista_aleatoria = []
+                x = 0
+                while x < 15:
+                    pergunta_random = random.choice(perguntas_carregadas)
+                    if pergunta_random in lista_aleatoria:
+                        continue
+                    else:
+                        lista_aleatoria.append(pergunta_random)
+                        x += 1
+                pontos = 0
+                try:
                     guardar_info(nome, pontos, "pontuacao_bomba.json") 
                     input(f"VAMOS JOGAR Pergunta BOMBA {nome}🤪🤪!!!!!")
                     print("\n")
-                except:
-                    input("Tivemos problema ao abrir as perguntas")
+                except json.JSONDecodeError:
+                    input("Não foi possivel guardar a informação do usuario")
                     break
+            
+            
 
-                    
+                
                 #Mostrando as perguntas de bomba
                 for dic in lista_aleatoria:
                         
@@ -147,9 +180,12 @@ while True:
                         if pontos_ganhos == "bomba":
                             break
                         else:
-                            
-                            pontos = pontos + pontos_ganhos
-                            guardar_info(nome, pontos, "pontuacao_bomba.json")
+                            try:
+                                pontos = pontos + pontos_ganhos
+                                guardar_info(nome, pontos, "pontuacao_bomba.json")
+                            except json.JSONDecodeError:
+                                print("Não foi possivel abrir o Ficheiro de pontos")
+                                break
 
                     except ValueError:
                         input("Voce digitou algo alem das opções então não ganhou nenhum ponto")
@@ -158,7 +194,7 @@ while True:
                 
                 input("🎉🎉 FIM DO QUIZ 🎉🎉")
                 input(f"parabens {nome} Voce fez {pontos} pontos")
-                    
+                
             elif escolhi_jogo == "4":
                 print(f"Ok {nome} Voltando pro Menu principal")
                 break    
@@ -176,7 +212,7 @@ while True:
                 escolhi_pontos = mostrar_pontos()
                 
                 if escolhi_pontos == "1":
-
+                
                     mostrar_info("pontuacao.json")
                     
                 elif escolhi_pontos == "2":
@@ -190,9 +226,9 @@ while True:
                 else:
                     input("O que voce escreveu não corresponde com nenhuma das opções da aplicação, tente novamente")
                     print("\n")
-        except FileNotFoundError:
+        except json.JSONDecodeError:
             input("houve um erro ao tentar abrir os pontos")
-            break
+            
         except:
             input("Há um problema no ficheiros dos pontos")
 
