@@ -1,304 +1,305 @@
 [
-
     {
-    "id":"Pergunta_1",
-    "Pergunta":"A capital do Brasil foi transferida de Salvador para o Rio de Janeiro em 1763",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_1",
+        "Pergunta":"O Monte Everest é a montanha mais alta do mundo acima do nível do mar",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_2",
-    "Pergunta":"A independência do Brasil ocorreu em 1822, proclamada por Dom Pedro I",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_2",
+        "Pergunta":"A água ferve a 90°C ao nível do mar",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_3",
-    "Pergunta":"A Revolução Francesa começou no ano de 1799",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_3",
+        "Pergunta":"O corpo humano possui 206 ossos na fase adulta",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_4",
-    "Pergunta":"O Mercúrio é o planeta mais próximo do Sol",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_4",
+        "Pergunta":"A Terra é o planeta mais próximo do Sol",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_5",
-    "Pergunta":"O átomo de oxigênio possui 8 prótons",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_5",
+        "Pergunta":"A Revolução Francesa começou em 1789",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_6",
-    "Pergunta":"A velocidade da luz é maior que a velocidade do som",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_6",
+        "Pergunta":"O Japão está localizado no continente europeu",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_7",
-    "Pergunta":"O Brasil faz fronteira com todos os países da América do Sul",
-    "Dificuldade":"Medio",
-    "correta":["F","f"]
+        "id":"Pergunta_7",
+        "Pergunta":"O oxigénio é essencial para a respiração humana",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_8",
-    "Pergunta":"O Monte Everest possui mais de 8.800 metros de altura",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_8",
+        "Pergunta":"O Oceano Atlântico é maior que o Oceano Pacífico",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_9",
-    "Pergunta":"A Antártida é o continente mais frio e mais seco da Terra",
-    "Dificuldade":"Dificil",
-    "correta":["V","v"]
+        "id":"Pergunta_9",
+        "Pergunta":"A fotossíntese ocorre nas plantas",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_10",
-    "Pergunta":"A Lua completa uma volta ao redor da Terra em aproximadamente 30 dias",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_10",
+        "Pergunta":"O Brasil faz fronteira com o Chile",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_11",
-    "Pergunta":"O Brasil conquistou sua independência de Portugal com a assinatura de um tratado internacional",
-    "Dificuldade":"Medio",
-    "correta":["F","f"]
+        "id":"Pergunta_11",
+        "Pergunta":"O planeta Vénus é mais quente que Mercúrio",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_12",
-    "Pergunta":"O DNA humano é composto por quatro bases nitrogenadas: adenina, timina, citosina e guanina",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_12",
+        "Pergunta":"Os humanos possuem três pulmões",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_13",
-    "Pergunta":"O hemisfério Sul é completamente livre de desertos",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_13",
+        "Pergunta":"A luz viaja mais rápido que o som",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_14",
-    "Pergunta":"A energia nuclear é produzida a partir do fenômeno da fissão ou fusão de átomos",
-    "Dificuldade":"Dificil",
-    "correta":["V","v"]
+        "id":"Pergunta_14",
+        "Pergunta":"O Monte Kilimanjaro está localizado na América do Sul",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_15",
-    "Pergunta":"O petróleo é considerado uma fonte de energia renovável",
-    "Dificuldade":"Facil",
-    "correta":["F","f"]
+        "id":"Pergunta_15",
+        "Pergunta":"A Primeira Guerra Mundial terminou em 1918",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_16",
-    "Pergunta":"A guerra dos Cem Anos durou mais de um século",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_16",
+        "Pergunta":"O sangue humano é naturalmente azul dentro do corpo",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_17",
-    "Pergunta":"O sol é uma estrela da classe G2V",
-    "Dificuldade":"Dificil",
-    "correta":["V","v"]
+        "id":"Pergunta_17",
+        "Pergunta":"O deserto do Saara é o maior deserto quente do mundo",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_18",
-    "Pergunta":"O cérebro humano é composto por duas partes principais: hemisfério esquerdo e direito",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_18",
+        "Pergunta":"A Antártida é o continente mais quente do planeta",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_19",
-    "Pergunta":"A água cobre mais de 70% da superfície da Terra",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_19",
+        "Pergunta":"Os golfinhos são mamíferos",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_20",
-    "Pergunta":"O açúcar é um tipo de carboidrato simples",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_20",
+        "Pergunta":"O Sol gira em torno da Terra",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_21",
-    "Pergunta":"O pH da água pura é 7 em temperatura ambiente",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_21",
+        "Pergunta":"A tabela periódica organiza os elementos químicos",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_22",
-    "Pergunta":"O Brasil aboliu a escravidão em 1888 com a assinatura da Lei Áurea",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_22",
+        "Pergunta":"A Austrália é ao mesmo tempo um país e um continente",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_23",
-    "Pergunta":"O sol gira em torno da Terra",
-    "Dificuldade":"Facil",
-    "correta":["F","f"]
+        "id":"Pergunta_23",
+        "Pergunta":"O Everest fica na cordilheira dos Andes",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_24",
-    "Pergunta":"A camada de ozônio protege a Terra contra radiação ultravioleta",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_24",
+        "Pergunta":"A energia nuclear é gerada a partir de reações no núcleo dos átomos",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_25",
-    "Pergunta":"O mercúrio é líquido à temperatura ambiente",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_25",
+        "Pergunta":"O Vaticano é o maior país do mundo em área",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_26",
-    "Pergunta":"O Brasil está localizado inteiramente no hemisfério norte",
-    "Dificuldade":"Facil",
-    "correta":["F","f"]
+        "id":"Pergunta_26",
+        "Pergunta":"A Lua influencia as marés da Terra",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_27",
-    "Pergunta":"A gravidade na Lua é menor que na Terra",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_27",
+        "Pergunta":"Os répteis são animais de sangue quente",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_28",
-    "Pergunta":"A Amazonia é o maior bioma do Brasil",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_28",
+        "Pergunta":"A velocidade da luz é maior que 200 mil km/s",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_29",
-    "Pergunta":"O açúcar é um nutriente essencial para o crescimento humano",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_29",
+        "Pergunta":"O Canadá está localizado na América do Sul",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_30",
-    "Pergunta":"O aço é uma liga de ferro e carbono",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_30",
+        "Pergunta":"O cérebro humano faz parte do sistema nervoso",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_31",
-    "Pergunta":"O Golfo do México está localizado na América do Norte",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_31",
+        "Pergunta":"A Grande Muralha da China pode ser vista facilmente do espaço a olho nu",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_32",
-    "Pergunta":"A Revolução Industrial começou na Alemanha",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_32",
+        "Pergunta":"O hidrogénio é o elemento mais abundante no universo",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_33",
-    "Pergunta":"O Brasil possui a maior reserva de água doce superficial do mundo",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_33",
+        "Pergunta":"Os insetos possuem oito patas",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_34",
-    "Pergunta":"O Mercúrio é o planeta mais quente do Sistema Solar",
-    "Dificuldade":"Medio",
-    "correta":["F","f"]
+        "id":"Pergunta_34",
+        "Pergunta":"A eletricidade pode ser gerada por energia solar",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_35",
-    "Pergunta":"A fotossíntese ocorre em cloroplastos das células vegetais",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_35",
+        "Pergunta":"O Polo Norte está localizado na Antártida",
+        "Dificuldade":"Facil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_36",
-    "Pergunta":"A Grande Muralha da China é visível a olho nu do espaço",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_36",
+        "Pergunta":"Os vírus são considerados seres vivos por todos os cientistas",
+        "Dificuldade":"Dificil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_37",
-    "Pergunta":"O Brasil tem nove países vizinhos",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_37",
+        "Pergunta":"A gravidade da Lua é menor que a da Terra",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_38",
-    "Pergunta":"O Java é um sistema operacional",
-    "Dificuldade":"Facil",
-    "correta":["F","f"]
+        "id":"Pergunta_38",
+        "Pergunta":"O sangue transporta oxigénio no corpo humano",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_39",
-    "Pergunta":"A camada terrestre chamada litosfera é sólida",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_39",
+        "Pergunta":"A teoria da evolução foi proposta por Isaac Newton",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_40",
-    "Pergunta":"O alumínio é mais leve que o ferro",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_40",
+        "Pergunta":"O planeta Saturno possui anéis",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_41",
-    "Pergunta":"O Brasil é o maior país da América do Sul em extensão territorial",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_41",
+        "Pergunta":"O coração humano tem quatro cavidades",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_42",
-    "Pergunta":"O Monte Kilimanjaro está localizado na África do Sul",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_42",
+        "Pergunta":"A África é o maior continente do mundo",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_43",
-    "Pergunta":"O Sol possui mais de 99% da massa do Sistema Solar",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_43",
+        "Pergunta":"A pressão atmosférica diminui com a altitude",
+        "Dificuldade":"Dificil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_44",
-    "Pergunta":"O pinguim é um animal que vive no hemisfério Norte",
-    "Dificuldade":"Dificil",
-    "correta":["F","f"]
+        "id":"Pergunta_44",
+        "Pergunta":"O som propaga-se mais rápido no ar do que na água",
+        "Dificuldade":"Dificil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_45",
-    "Pergunta":"A fotossíntese converte CO2 e água em glicose e oxigênio",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_45",
+        "Pergunta":"Os mamíferos alimentam os seus filhotes com leite",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_46",
-    "Pergunta":"O Brasil é banhado pelo Oceano Atlântico",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_46",
+        "Pergunta":"O dióxido de carbono é essencial para a respiração humana",
+        "Dificuldade":"Medio",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_47",
-    "Pergunta":"A Estátua da Liberdade está localizada em Paris",
-    "Dificuldade":"Medio",
-    "correta":["F","f"]
+        "id":"Pergunta_47",
+        "Pergunta":"O Sol é uma estrela",
+        "Dificuldade":"Facil",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_48",
-    "Pergunta":"O petróleo é formado a partir da decomposição de matéria orgânica",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_48",
+        "Pergunta":"A eletricidade não pode viajar no vácuo",
+        "Dificuldade":"Dificil",
+        "correta":["F","f"]
     },
     {
-    "id":"Pergunta_49",
-    "Pergunta":"O aço inoxidável contém cromo em sua composição",
-    "Dificuldade":"Medio",
-    "correta":["V","v"]
+        "id":"Pergunta_49",
+        "Pergunta":"A camada de ozono protege a Terra da radiação ultravioleta",
+        "Dificuldade":"Medio",
+        "correta":["V","v"]
     },
     {
-    "id":"Pergunta_50",
-    "Pergunta":"A penicilina foi descoberta por Alexander Fleming",
-    "Dificuldade":"Facil",
-    "correta":["V","v"]
+        "id":"Pergunta_50",
+        "Pergunta":"O ouro é mais leve que o alumínio",
+        "Dificuldade":"Dificil",
+        "correta":["F","f"]
     }
+
+
 
 ]
