@@ -38,14 +38,21 @@ while True:
                     lista_aleatoria = []
                     x = 0
                     while x < 15:
+                        lista_não_tem_15 = False
+                        if len(perguntas_carregadas) < 15:
+                            input("a lista tem que ter no minimo 15 perguntas")
+                            input("O programa não pode continuar, voltando pro menu")
+                            print("\n")
+                            lista_não_tem_15 = True
+                            break
+                            
                         pergunta_random = random.choice(perguntas_carregadas)
                         if pergunta_random in lista_aleatoria:
                             continue
                         else:
                             lista_aleatoria.append(pergunta_random)
                             x += 1
-                    if len(lista_aleatoria) < 15:
-                        print("a lista tem que ter no minimo 15 perguntas")
+                    if lista_não_tem_15 == True:
                         break
                     pontos = 0
                     guardar_info(nome, pontos, "pontuacao.json") 
@@ -92,12 +99,24 @@ while True:
                     lista_aleatoria = []
                     x = 0
                     while x < 15:
+                        lista_não_tem_15 = False
+                        if len(perguntas_carregadas) < 15:
+                            input("a lista tem que ter no minimo 15 perguntas")
+                            input("O programa não pode continuar, voltando pro menu")
+                            print("\n")
+                            lista_não_tem_15 = True
+                            break
                         pergunta_random = random.choice(perguntas_carregadas)
                         if pergunta_random in lista_aleatoria:
                             continue
                         else:
                             lista_aleatoria.append(pergunta_random)
                             x += 1
+                        if lista_não_tem_15 == True:
+                            break
+                    if len(lista_aleatoria) < 15:
+                        print("a lista tem que ter no minimo 15 perguntas")
+                        break
                     pontos = 0
                     guardar_info(nome, pontos, "pontuacao_verdadeiro_falso.json") 
                     input(f"VAMOS JOGAR Verdadeiro ou falso {nome}!!!!!")
@@ -148,12 +167,24 @@ while True:
                 lista_aleatoria = []
                 x = 0
                 while x < 15:
+                    lista_não_tem_15 = False
+                    if len(perguntas_carregadas) < 15:
+                        input("a lista tem que ter no minimo 15 perguntas")
+                        input("O programa não pode continuar, voltando pro menu")
+                        print("\n")
+                        lista_não_tem_15 = True
+                        break
                     pergunta_random = random.choice(perguntas_carregadas)
                     if pergunta_random in lista_aleatoria:
                         continue
                     else:
                         lista_aleatoria.append(pergunta_random)
                         x += 1
+                    if lista_não_tem_15 == True:
+                        break
+                if len(lista_aleatoria) < 15:
+                        print("a lista tem que ter no minimo 15 perguntas")
+                        break
                 pontos = 0
                 try:
                     guardar_info(nome, pontos, "pontuacao_bomba.json") 
