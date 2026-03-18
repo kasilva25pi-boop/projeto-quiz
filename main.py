@@ -36,9 +36,6 @@ while True:
                 try: 
                     perguntas_carregadas = carregar_perguntas("perguntas.json")
                     lista_aleatoria = []
-                    if len(lista_aleatoria) < 15:
-                        print("a lista tem que ter no minimo 15 perguntas")
-                        break
                     x = 0
                     while x < 15:
                         pergunta_random = random.choice(perguntas_carregadas)
@@ -47,6 +44,9 @@ while True:
                         else:
                             lista_aleatoria.append(pergunta_random)
                             x += 1
+                    if len(lista_aleatoria) < 15:
+                        print("a lista tem que ter no minimo 15 perguntas")
+                        break
                     pontos = 0
                     guardar_info(nome, pontos, "pontuacao.json") 
                     input(f"VAMOS JOGAR {nome}!!!!!")

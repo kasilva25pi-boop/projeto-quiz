@@ -38,6 +38,7 @@ def mostrar_info(ficheiro_json):
         for ponto in pontuacao.values():
             todos_pontos.append(ponto)
         maior_pontos = max(todos_pontos)
+        print("os Pontos registrados são: ")
         for nome, pontos in pontuacao.items():
             print(f"{nome}: {pontos}")
             print("--------------")
